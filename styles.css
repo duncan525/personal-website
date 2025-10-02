@@ -1,0 +1,187 @@
+body {
+    background-color: rgb(63, 9, 114);
+    color: white;
+    /* courier new, TREBUCHET! */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+#left {
+    background: green;
+    height: 100vh;
+    width: 40vw;
+    display: grid;
+    grid-template-rows: 27vh 38vh 27vh 8vh;
+}
+    #name_and_photo {
+        background: rgb(1, 161, 1);
+        display: grid;
+        grid-template-columns: 20vw 20vw;
+        padding-left: 7px;
+    }
+
+        #name {
+            background: rgb(1, 161, 1);
+            padding-top: 1vh;
+            padding-left: 1vw;
+            font-size: 30px;
+        }
+        
+        #photo {
+            background: rgb(7, 203, 7);
+            height: 28vh;
+        }
+
+            .left {
+                height: 28vh;
+                width: 20vw;
+                object-fit: cover;
+            }
+
+    #intro_text {
+        background: rgb(1, 126, 1);
+        padding: 2vh 1.5vw 0vh 1.5vw;
+    }
+
+    #dropdowns {
+        background: rgb(1, 126, 1);
+        padding: 0vh 1.5vw 2vh 9px;
+        overflow: scroll;
+    }
+
+        .dropdown {
+            height: auto;
+            padding: 3px;
+            border: 2px solid white;
+            margin: 10px;
+            color: white;
+        }
+
+        .dropdown_title {
+            padding-left: 10px;
+        }
+
+        #dropdown1_content, #dropdown2_content, #dropdown3_content {
+            display: none;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+    /* only :hover as a placeholder: should be changed to be click-interactive later */
+        .dropdown:hover #dropdown1_content {
+            display: inherit;
+            background: lightgrey;
+            border-radius: 3%;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding: 10px 10px 10px 10px;
+            
+        }
+
+        /* not sure why these next 2 selectors have to be separate from the last one but ok */
+        .dropdown:hover #dropdown2_content {
+            display: inherit;
+            background: lightgrey;
+            border-radius: 3%;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding: 10px 10px 10px 10px;
+        }
+
+        .dropdown:hover #dropdown3_content {
+            display: inherit;
+            background: lightgrey;
+            border-radius: 3%;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding: 10px 10px 10px 10px;
+        }
+
+        #dropdown1, #dropdown2, #dropdown3 {
+            background: darkgray;
+        }
+
+    #contact {
+        background: rgb(0, 55, 0);
+        text-align: center;
+    }
+
+#rightside {
+    background: red;
+    height: 100vh;
+    width: 60vw;
+    display: grid;
+    grid-template-rows: 46vh 27vh 27vh;
+}
+
+    #top {
+        background: orange;
+        display: grid;
+        grid-template-columns: 33vw 27vw;
+    }
+
+        #project {
+            background: rgb(0, 0, 175);
+            display: grid;
+            grid-template-rows: 8vh 38vh;
+        }
+
+            #project_title {
+                background: rgb(56, 56, 235);
+                display: grid;
+                grid-template-columns: 22vw 11vw;
+                text-align: center;
+            }
+
+                #project_sel {
+                    background: rgb(91, 91, 231);
+                    align-content: center;
+                }
+
+            #project_img {
+                background: black;
+                display: flex;
+                align-items: flex-start;
+                border: 2px solid white;
+            }
+
+                #right {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+            #project_des {
+                background: rgb(1, 1, 131);
+                padding: 5% 5% 5% 7%;
+                text-align: left;
+                overflow: scroll;
+
+            }
+
+    #mid {
+        background: rgb(122, 0, 159);
+        display: grid;
+        grid-template-columns: 20vw 20vw 20vw;
+    }
+
+        #one, #two, #three {
+            background: rgb(10, 106, 158);
+            margin: 5% 5% 5% 5%;
+            border: 2px solid white;
+            border-radius: 25%;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+    #low {
+        background: rgb(48, 0, 111);
+    }
+
+/* ensures correct image is displayed */
+.hide {
+    display: none;
+}
