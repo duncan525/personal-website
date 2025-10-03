@@ -70,7 +70,7 @@ body {
         }
 
     /* only :hover as a placeholder: should be changed to be click-interactive later */
-        .dropdown:hover #dropdown1_content {
+        .dropped #dropdown1_content {
             display: inherit;
             background: lightgrey;
             border-radius: 3%;
@@ -81,7 +81,7 @@ body {
         }
 
         /* not sure why these next 2 selectors have to be separate from the last one but ok */
-        .dropdown:hover #dropdown2_content {
+        .dropped #dropdown2_content {
             display: inherit;
             background: lightgrey;
             border-radius: 3%;
@@ -90,7 +90,7 @@ body {
             padding: 10px 10px 10px 10px;
         }
 
-        .dropdown:hover #dropdown3_content {
+        .dropped #dropdown3_content {
             display: inherit;
             background: lightgrey;
             border-radius: 3%;

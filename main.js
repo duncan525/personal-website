@@ -1,6 +1,32 @@
+// deal with issue reporting form
+var submit_button = document.getElementById("submit_button");
+
+submit_button.addEventListener("click", sendInfo)
+
+function sendInfo() {
+    var test_input = document.getElementById("test_input");
+    console.log(test_input.value);
+}
+
 // deal with dropdown boxes section
 var dropdowns = document.getElementsByClassName("dropdown");
-console.log(dropdowns[0]);
+for (var i = 0; i < dropdowns.length; i++) {
+    dropdowns[i].children[0].addEventListener("click", drop_down);
+}
+
+function drop_down() {
+    var parent = this.parentNode;
+
+    if (parent.classList.contains("dropped")) {
+        parent.classList.remove("dropped");
+    } else {
+        parent.classList.add("dropped");
+    }
+
+    console.log(this.classList);
+    console.log("dropped down");
+    
+}
 
 // deal with project section
 var project_img = document.getElementById("right")
