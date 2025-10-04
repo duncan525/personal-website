@@ -128,17 +128,19 @@
 
         <!-- skills? other interests?> -->
         <div id="low" class="sub">
-            <input type="text" id="test_input">
+            <select name="Select project..." id="select_project">
+                <option value = "">Select project...</option>
+                <option value = "untitled_game">Untitled Game</option>
+                <option value = "the_sodfather">The Sodfather</option>
+                <option value = "website">Website</option>
+            </select>
+
+            <input type="text" placeholder="Enter issue..." id="issue_description" class="input">
+            <input type="text" placeholder="Enter email..." id="email" class="input">
+
             <button id="submit_button">Submit</button>
-            <p>bug reporting form for projects/games</p>
-            <p>options: what project, describe the issue,
-                your contact so i can get back to you with
-                further questions, maybe something else
-            </p>
-            <p>it would be interesting if i had a page
-                that dynamically represented the bug reports
-                that had been filed, but that sounds hard
-            </p>
+
+            <p id="input_error" class="hide"></p>
         </div>
     </div>
 

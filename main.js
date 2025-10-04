@@ -1,11 +1,37 @@
 // deal with issue reporting form
 var submit_button = document.getElementById("submit_button");
+var input_error = document.getElementById("input_error")
 
 submit_button.addEventListener("click", sendInfo)
 
 function sendInfo() {
-    var test_input = document.getElementById("test_input");
-    console.log(test_input.value);
+    var project = document.getElementById("select_project").value;
+    var issue = document.getElementById("issue_description").value;
+    var email = document.getElementById("email").value;
+
+    var form_info = new Array([project, issue, email])
+
+    if (project == "") {
+        console.log("project input error");
+        input_error.innerText += "Must choose a project. "
+    }
+
+    if (issue == "") {
+        console.log("issue input error");
+        input_error.innerText += "Must enter an issue. "
+    }
+
+    if (email == "") {
+        console.log("email input error");
+        input_error.innerText += "Must enter an email. "
+    }
+
+    if (input_error.innerText != "") {
+        input_error.classList.remove("hide");
+    }
+
+    console.log(input_error.innerText);
+    console.log(form_info);
 }
 
 // deal with dropdown boxes section

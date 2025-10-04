@@ -181,6 +181,11 @@ body {
         background: rgb(48, 0, 111);
     }
 
+        .input {
+            height: 20px;
+            border-radius: 5%;
+        }
+
 /* ensures correct image is displayed */
 .hide {
     display: none;
