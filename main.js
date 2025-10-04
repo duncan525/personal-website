@@ -10,28 +10,35 @@ function sendInfo() {
     var email = document.getElementById("email").value;
 
     var form_info = new Array([project, issue, email])
+    var can_log = true;
 
     if (project == "") {
-        console.log("project input error");
-        input_error.innerText += "Must choose a project. "
+        if (!input_error.innerText.includes("Must choose a project. "))
+            input_error.innerText += "Must choose a project. ";
+
+        can_log = false;
     }
 
     if (issue == "") {
-        console.log("issue input error");
-        input_error.innerText += "Must enter an issue. "
+        if (!input_error.innerText.includes("Must enter an issue. "))
+            input_error.innerText += "Must enter an issue. ";
+
+        can_log = false;
     }
 
     if (email == "") {
-        console.log("email input error");
-        input_error.innerText += "Must enter an email. "
+        if (!input_error.innerText.includes("Must enter an email."))
+            input_error.innerText += "Must enter an email.";
+
+        can_log = false;
     }
 
     if (input_error.innerText != "") {
         input_error.classList.remove("hide");
     }
 
-    console.log(input_error.innerText);
-    console.log(form_info);
+    if (can_log)
+        console.log(form_info);
 }
 
 // deal with dropdown boxes section
@@ -45,13 +52,12 @@ function drop_down() {
 
     if (parent.classList.contains("dropped")) {
         parent.classList.remove("dropped");
+        this.style.top = "-5px";
     } else {
         parent.classList.add("dropped");
+        this.style.top = "0px";
     }
 
-    console.log(this.classList);
-    console.log("dropped down");
-    
 }
 
 // deal with project section
@@ -94,12 +100,9 @@ right_button.addEventListener("click", function() {
 })
 
 function changeProject(direction) {
-    console.log(direction);
     if (current_index == 0 && direction == -1) {
-        console.log("just looped backwards");
         current_index = (images.length-1);
     } else if (current_index == images.length - 1 && direction == 1) {
-        console.log("just looped forwards");
         current_index = 0;
     } else {
         current_index += direction;

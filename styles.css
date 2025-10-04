@@ -51,6 +51,10 @@ body {
         overflow: scroll;
     }
 
+        #dropdown1, #dropdown2, #dropdown3 {
+            background: darkgray;
+        }
+
         .dropdown {
             height: auto;
             padding: 3px;
@@ -59,15 +63,28 @@ body {
             color: white;
         }
 
-        .dropdown_title {
-            padding-left: 10px;
-        }
+            .dropdown_title {
+                padding: 10px 0px 10px 10px;
+                margin-top: 0px;
+                margin-bottom: -10px;
+                position: relative;
+                top: -5px;
+            }
 
-        #dropdown1_content, #dropdown2_content, #dropdown3_content {
-            display: none;
-            padding-left: 10px;
-            padding-right: 10px;
-        }
+            .dropdown_title:hover {
+                background-color: lightgrey;
+                padding-top: 5px;
+                margin-top: 5px;
+                padding-bottom: 5px;
+                margin-bottom: -5px;
+                border-radius: 5%;
+            }
+
+            #dropdown1_content, #dropdown2_content, #dropdown3_content {
+                display: none;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
 
     /* only :hover as a placeholder: should be changed to be click-interactive later */
         .dropped #dropdown1_content {
@@ -97,10 +114,6 @@ body {
             margin-left: 10px;
             margin-right: 10px;
             padding: 10px 10px 10px 10px;
-        }
-
-        #dropdown1, #dropdown2, #dropdown3 {
-            background: darkgray;
         }
 
     #contact {
