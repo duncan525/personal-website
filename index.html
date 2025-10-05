@@ -70,7 +70,7 @@
         </div>
 
         <div id="contact">
-            <p><strong><u>contact</u> | <u>linkedin</u> | <u>itch</u> | <u>github</u></strong></p>
+            <p><strong><u><!--link to contact page-->contact</u> | <a href="https://www.linkedin.com/in/j-luke-duncan/">linkedin</a> | <a href="https://github.com/duncan525">github</a> | <a href="https://estrelaplatina.itch.io/">itch</a></strong></p>
         </div>
 
     </div>
@@ -128,19 +128,25 @@
 
         <!-- skills? other interests?> -->
         <div id="low" class="sub">
-            <select name="Select project..." id="select_project">
-                <option value = "">Select project...</option>
-                <option value = "untitled_game">Untitled Game</option>
-                <option value = "the_sodfather">The Sodfather</option>
-                <option value = "website">Website</option>
-            </select>
 
-            <input type="text" placeholder="Enter issue..." id="issue_description" class="input">
-            <input type="text" placeholder="Enter email..." id="email" class="input">
+            <div id="left-low">
+                <select name="Select project..." id="select_project">
+                    <option value = "">Select project...</option>
+                    <option value = "untitled_game">Untitled Game</option>
+                    <option value = "the_sodfather">The Sodfather</option>
+                    <option value = "website">Website</option>
+                </select>
 
-            <button id="submit_button">Submit</button>
+                <input type="text" placeholder="Enter email..." id="email" class="input">
 
-            <p id="input_error" class="hide"></p>
+                <button id="submit_button"><strong>Submit question/comment/bug report</strong></button>
+
+            </div>
+
+            <div id="right-low">
+                <textarea type="text" placeholder="Enter description..." maxlength = 500
+                id="issue_description" class="input"></textarea>
+            </div>
         </div>
     </div>
 

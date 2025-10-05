@@ -1,44 +1,74 @@
 // deal with issue reporting form
 var submit_button = document.getElementById("submit_button");
 var input_error = document.getElementById("input_error")
+var is_hover = false;
 
-submit_button.addEventListener("click", sendInfo)
+
+submit_button.addEventListener("mouseenter", function() {
+    is_hover = true;
+
+    this.style.background = "darkgrey";
+    this.style.color = "rgb(231, 231, 231)";
+})
+
+submit_button.addEventListener("mouseleave", function() {
+    is_hover = false;
+
+    this.style.background = "white";
+    this.style.color = "grey";
+})
+
+submit_button.addEventListener("mousedown", function() {
+    this.style.background = "grey";
+    this.style.color = "white";
+})
+
+submit_button.addEventListener("mouseup", function() {
+    if (!is_hover) {
+        this.style.background = "white";
+        this.style.color = "grey";
+    } else {
+        this.style.background = "darkgrey";
+        this.style.color = "rgb(231, 231, 231)";
+    }
+})
+
+submit_button.addEventListener("click", sendInfo);
 
 function sendInfo() {
-    var project = document.getElementById("select_project").value;
-    var issue = document.getElementById("issue_description").value;
-    var email = document.getElementById("email").value;
+    var project = document.getElementById("select_project");
+    var issue = document.getElementById("issue_description");
+    var email = document.getElementById("email");
 
     var form_info = new Array([project, issue, email])
     var can_log = true;
 
-    if (project == "") {
-        if (!input_error.innerText.includes("Must choose a project. "))
-            input_error.innerText += "Must choose a project. ";
-
+    if (project.value == "") {
+        project.style.borderColor = "red";
         can_log = false;
     }
 
-    if (issue == "") {
-        if (!input_error.innerText.includes("Must enter an issue. "))
-            input_error.innerText += "Must enter an issue. ";
-
+    if (issue.value == "") {
+        issue.style.borderColor = "red";
         can_log = false;
     }
 
-    if (email == "") {
-        if (!input_error.innerText.includes("Must enter an email."))
-            input_error.innerText += "Must enter an email.";
-
+    if (email.value == "") {
+        email.style.borderColor = "red";
         can_log = false;
     }
 
-    if (input_error.innerText != "") {
-        input_error.classList.remove("hide");
-    }
-
-    if (can_log)
+    if (can_log) {
         console.log(form_info);
+
+        project.style.borderColor = "white";
+        issue.style.borderColor = "grey";
+        email.style.borderColor = "grey";
+
+        project.value = "";
+        issue.value = "";
+        email.value = "";
+    }
 }
 
 // deal with dropdown boxes section

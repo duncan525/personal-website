@@ -86,6 +86,10 @@ body {
                 padding-right: 10px;
             }
 
+    a {
+        color: white;
+    }
+
     /* only :hover as a placeholder: should be changed to be click-interactive later */
         .dropped #dropdown1_content {
             display: inherit;
@@ -192,12 +196,72 @@ body {
 
     #low {
         background: rgb(48, 0, 111);
+        display: grid;
+        grid-template-columns: 35% 65%;
     }
 
         .input {
             height: 20px;
             border-radius: 5%;
         }
+
+        #left-low {
+            background: blue;
+            display: inherit;
+            grid-template-rows: 30% 30% 40%;
+        }
+
+            #select_project {
+                margin: 7px 7px 5px 7px;
+                border: 2px solid white;
+                border-radius: 3px;
+                background-color: darkgrey;
+                color: white;
+            }
+
+            #email {
+                margin: 5px 7px 5px 7px;
+                padding: 3px 3px 3px 3px;
+                border: 2px solid grey;
+                border-radius: 3px;
+                background-color: white;
+            }
+
+            #submit_button {
+                margin: 0px 14px 7px 7px;
+                border: 2px solid grey;
+                border-radius: 3px;
+                background-color: white;
+                color: grey;
+            }
+
+                #submit_button:hover {
+                    background-color: darkgrey;
+                    color: white;
+                }
+
+        #right-low {
+            background: rgb(0, 255, 21);
+        }
+
+            #issue_description {
+                margin: 7px 7px 7px 7px;
+                padding: 7px 7px 7px 7px;
+
+                align-self: center;
+
+                position:relative;
+                top: 2%;
+                right: 3%;
+                bottom: 2%;
+                left: 2%;
+                width: 87.5%;
+                height: 82%;
+
+                resize: none;
+            }
+
+
 
 /* ensures correct image is displayed */
 .hide {
