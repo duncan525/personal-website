@@ -1,6 +1,6 @@
 body {
     background-color: #6b6b6b;
-    color: #2D3142;
+    color: #292D3C;
     /* courier new, TREBUCHET! */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: grid;
@@ -9,53 +9,117 @@ body {
 }
 
 #left {
-    background-color: red;
     display: grid;
     grid-template-rows: 0.1fr 0.9fr;
 }
 
     #left1 {
-        background-color: coral;
+        background-color: #2D3142;
+        margin-bottom: 1vw;
+        border: 2px solid white;
+        border-right: none;
+        color: white;
+        text-align: right;
+        font-size: 25px;
+        padding-right: 1vw;
+        padding-top: 1vh;
+    }
+
+    #left2 {
+        background-color: red;
+        margin-top: 1vw;
+        border: 2px solid white;
     }
 
 #mid {
-    background-color: blue;
     display: grid;
     grid-template-rows: 0.2fr 0.5fr 0.3fr;
 }
 
     #mid1 {
-        background-color: rgb(255, 255, 0);
         display: grid;
         grid-template-columns: 0.5fr 0.5fr;
     }
 
         #mid1a {
-            background-color: orange;
             display: grid;
             grid-template-rows: 0.5fr 0.5fr;
         }
 
             #mid1ai {
-                background-color: blueviolet;
+                background-color: #2D3142;
+                margin-right: 1vw;
+                margin-bottom: 1vw;
+                border: 2px solid white;
+                border-left: none;
+                color: white;
+                text-align: left;
+                font-size: 25px;
+                padding-top: 1vh;
             }
 
             #mid1aii {
                 background-color: purple;
+                margin-left: 1vw;
+                margin-right: 1vw;
+                margin-top: 1vw;
+                border: 2px solid white;
+                border-bottom: 0;
+                color: white;
+                padding: 0 0 0 10px;
             }
 
         #mid1b {
             background-color: darkorange;
+            margin-left: 1vw;
+            margin-bottom: 1vw;
+            border: 2px solid white;
+            border-right: none;
         }
 
     #mid2 {
         background-color: rgb(0, 255, 255);
+        margin: 0 1vw 1vw 1vw;
+        border: 2px solid white;
+        display: grid;
+        grid-template-rows: 0.8fr 0.2fr;
+        overflow: hidden;
     }
+
+        #mid2a {
+            overflow: hidden;
+            border-bottom: 2px solid white;
+        }
+
+            #project_img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+
+        #mid2b{
+            display: grid;
+            grid-template-columns: 0.8fr 0.2fr;
+        }
+
+            #mid2bi {
+                border-right: 2px solid white;
+                text-align: center;
+            }
+
+            #mid2bii {
+                display: inline-flex;
+                align-content: center;
+            }
 
     #mid3 {
         background-color: rgb(255, 0, 255);
+        margin-right: 1vw;
+        border: 2px solid white;
+        border-left: none;
     }
 
 #right {
     background-color:rgb(0, 255, 0);
+    border: 2px solid white;
 }
