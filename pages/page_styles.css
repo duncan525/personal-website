@@ -1,0 +1,61 @@
+body {
+    background-color: #6b6b6b;
+    color: #2D3142;
+    /* courier new, TREBUCHET! */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: grid;
+    grid-template-columns: 0.25fr 0.5fr 0.25fr;
+    height: 98vh;
+}
+
+#left {
+    background-color: red;
+    display: grid;
+    grid-template-rows: 0.1fr 0.9fr;
+}
+
+    #left1 {
+        background-color: coral;
+    }
+
+#mid {
+    background-color: blue;
+    display: grid;
+    grid-template-rows: 0.2fr 0.5fr 0.3fr;
+}
+
+    #mid1 {
+        background-color: rgb(255, 255, 0);
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr;
+    }
+
+        #mid1a {
+            background-color: orange;
+            display: grid;
+            grid-template-rows: 0.5fr 0.5fr;
+        }
+
+            #mid1ai {
+                background-color: blueviolet;
+            }
+
+            #mid1aii {
+                background-color: purple;
+            }
+
+        #mid1b {
+            background-color: darkorange;
+        }
+
+    #mid2 {
+        background-color: rgb(0, 255, 255);
+    }
+
+    #mid3 {
+        background-color: rgb(255, 0, 255);
+    }
+
+#right {
+    background-color:rgb(0, 255, 0);
+}

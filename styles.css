@@ -158,6 +158,11 @@ body {
                 border: 2px solid #292D3C;
             }
 
+                #img_container {
+                    height: 100%;
+                    width: 100%;
+                }
+
                 #right {
                     height: 100%;
                     width: 100%;
