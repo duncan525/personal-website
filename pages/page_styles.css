@@ -8,6 +8,17 @@ body {
     height: 98vh;
 }
 
+.nav_button {
+    width: 50%;
+    height: 100%;
+}
+
+select {
+    background-color: #BFC0C0;
+    color: white;
+
+}
+
 #left {
     display: grid;
     grid-template-rows: 0.1fr 0.9fr;
@@ -26,10 +37,19 @@ body {
     }
 
     #left2 {
-        background-color: red;
         margin-top: 1vw;
         border: 2px solid white;
+        display: grid;
+        grid-template-rows: 0.2fr 0.8fr;
     }
+
+        #left2a {
+            background-color: #D0D0D0;
+        }
+
+        #left2b {
+            background-color: #D0D0D0;
+        }
 
 #mid {
     display: grid;
@@ -66,16 +86,35 @@ body {
                 border: 2px solid white;
                 border-bottom: 0;
                 color: white;
-                padding: 0 0 0 10px;
             }
 
+                #project_title {
+                    width: 100%;
+                    height: 100%;
+                    font-size: larger;
+                    padding-left: 5%;
+                }
+
         #mid1b {
-            background-color: darkorange;
+            background-color: #2D3142;
+            color: white;
             margin-left: 1vw;
             margin-bottom: 1vw;
             border: 2px solid white;
             border-right: none;
+            display: grid;
+            grid-template-columns: 0.6fr 0.4fr;
         }
+
+            #mid1bi {
+                margin: auto;
+            }
+
+            #mid1bii {
+                margin: 5px 5px 5px 5px;
+                align-content: center;
+                display: inline-flex;
+            }
 
     #mid2 {
         background-color: rgb(0, 255, 255);
@@ -105,6 +144,8 @@ body {
             #mid2bi {
                 border-right: 2px solid white;
                 text-align: center;
+                background-color: #2D3142;
+                color: white;
             }
 
             #mid2bii {
@@ -113,13 +154,14 @@ body {
             }
 
     #mid3 {
-        background-color: rgb(255, 0, 255);
+        background-color: #BFC0C0;
         margin-right: 1vw;
         border: 2px solid white;
         border-left: none;
     }
 
 #right {
-    background-color:rgb(0, 255, 0);
+    background-color: #4F5D75;
+    color: white;
     border: 2px solid white;
 }
