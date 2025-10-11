@@ -43,6 +43,7 @@ var current_screenshot = 0;
 
 var buttons = document.getElementsByClassName("nav_button");
 
+// enable buttons; pass appropriate fields to advance_page
 for (var i = 0; i < buttons.length; i++) {
     // apparently "var" only ever refers to a single button, which will be updated as the loop continues
         // ...so i end up getting a single eventlistener that considers every button to be the last one?
@@ -54,8 +55,10 @@ for (var i = 0; i < buttons.length; i++) {
     })
 }
 
+// change page or screenshot depending on which button was pressed
 function advance_page(which_buttons, direction) {
-    if (which_buttons == "info") {
+    // deal with panels
+    if (which_buttons == "panel") {
 
         panels[current_panel].classList.add("hide");
         panel_titles[current_panel].classList.add("hide");
@@ -73,6 +76,7 @@ function advance_page(which_buttons, direction) {
         panels[current_panel].classList.remove("hide");
         panel_titles[current_panel].classList.remove("hide");
 
+    // deal with screenshots
     } else if (which_buttons == "screenshot") {
         screenshots[current_screenshot].classList.add("hide");
         screenshot_titles[current_screenshot].classList.add("hide");
