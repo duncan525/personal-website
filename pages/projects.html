@@ -11,7 +11,7 @@
     <div id="left">
         
         <div id="left1">
-            home | projects
+            <a href="../index.html">home</a> | <a href="projects.html">projects</a>
         </div>
 
         <div id="left2">
@@ -39,10 +39,9 @@
                 </div>
 
                 <div id="mid1aii">
-                    <select name = "select project" id="project_title">
-                        <option value="">Project 1</option>
-                        <option value="">Project 2</option>
-                        <option value="">Project 3</option>
+                    <select name = "select project" id="select_project">
+                        <option value="1" class="project_title">Project 1</option>
+                        <option value="2" class="project_title">Project 2</option>
                     </select>
                 </div>
             
@@ -50,12 +49,20 @@
 
             <div id="mid1b">
                 <div id="mid1bi">
-                    <h2 id="project_intro">Project Intro</h2>
+                    <h2 class="p1 panel_title">Project 1 Intro</h2>
+                    <h2 class="p1 panel_title hide">Panel 1.2</h2>
+                    <h2 class="p1 panel_title hide">Panel 1.3</h2>
+                    <h2 class="p1 panel_title hide">Panel 1.4</h2>
+
+                    <h2 class="p2 panel_title hide">Project 2 Intro</h2>
+                    <h2 class="p2 panel_title hide">Panel 2.2</h2>
+                    <h2 class="p2 panel_title hide">Panel 2.3</h2>
+                    <h2 class="p2 panel_title hide">Panel 2.4</h2>
                 </div>
 
                 <div id="mid1bii">
-                    <button class="nav_button" id="left_description">&lt;</button>
-                    <button class="nav_button" id="right_description">&gt;</button>
+                    <button class="nav_button info left">&lt;</button>
+                    <button class="nav_button info right">&gt;</button>
                 </div>
             </div>
 
@@ -64,18 +71,20 @@
         <div id="mid2">
 
             <div id="mid2a">
-                <img class = "" id="project_img" src="../images/FirstGameImg.png" alt="screenshot of the game">
+                <img class="img" id="project_img" src="../images/FirstGameImg.png" alt="screenshot of the game">
+                <img class="img hide" src="../images/test_pic.png" alt="test image">
             </div>
 
             <div id="mid2b">
 
                 <div id="mid2bi">
-                    <h3>screenshot description</h3>
+                    <h3 class="img_title">screenshot 1 description</h3>
+                    <h3 class="img_title hide">screenshot 2 description</h3>
                 </div>
 
                 <div id="mid2bii">
-                    <button class="nav_button" id="left_screenshot">&lt;</button>
-                    <button class="nav_button" id="right_screenshot">&gt;</button>
+                    <button class="nav_button screenshot left">&lt;</button>
+                    <button class="nav_button screenshot right">&gt;</button>
                 </div>
 
             </div>
@@ -89,7 +98,51 @@
     </div>
 
     <div id="right">
-        <p>here is a bunch of text</p>
+
+        <div id="intro_text" class = "p1 panel">
+            <p>here is a bunch of text for intro_text. hopefully this will be
+            enough text to wrap around a few times by the time i finish this
+            sentence.
+            </p>
+            <p>this is the next paragraph of text in this section of the 
+            panel. god help us all
+            </p>
+        </div>
+        
+        <div id="panel_2" class="p1 panel hide">
+            <p>panel 1.2 text</p>
+        </div>
+
+        <div id="panel_3" class="p1 panel hide">
+            <p>panel 1.3 text</p>
+        </div>
+
+        <div id="panel_4" class="p1 panel hide">
+            <p>panel 1.4 text</p>
+        </div>
+
+        <div id="intro_text 2" class = "p2 panel hide">
+            <p>here is a bunch of text for intro_text. hopefully this will be
+            enough text to wrap around a few times by the time i finish this
+            sentence.
+            </p>
+            <p>this is the next paragraph of text in this section of the 
+            panel. god help us all
+            </p>
+        </div>
+        
+        <div id="panel_2" class="p2 panel hide">
+            <p>panel 2.2 text</p>
+        </div>
+
+        <div id="panel_3" class="p2 panel hide">
+            <p>panel 2.3 text</p>
+        </div>
+
+        <div id="panel_4" class="p2 panel hide">
+            <p>panel 2.4 text</p>
+        </div>
+
     </div>
 
 </body>
