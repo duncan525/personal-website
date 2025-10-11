@@ -5,25 +5,40 @@ project.addEventListener("change", function() {
 
 var which_project = 1;
 
+// arrays for project panels and panel titles
 var p1_panels = document.getElementsByClassName("p1 panel");
-var p1_panel_titles = document.getElementsByClassName("p1 panel_title");
 var p2_panels = document.getElementsByClassName("p2 panel");
-var p2_panel_titles = document.getElementsByClassName("p2 panel_title");
-
 var project_panels = [];
 project_panels.push(p1_panels);
 project_panels.push(p2_panels);
 
+var p1_panel_titles = document.getElementsByClassName("p1 panel_title");
+var p2_panel_titles = document.getElementsByClassName("p2 panel_title");
 var project_panel_titles = [];
 project_panel_titles.push(p1_panel_titles);
 project_panel_titles.push(p2_panel_titles);
 
+// working values for current project panels/panel titles
 var panels = p1_panels;
 var panel_titles = p1_panel_titles;
 var current_panel = 0;
 
-var screenshots = document.getElementsByClassName("img");
-var screenshot_titles = document.getElementsByClassName("img_title");
+// arrays for project screenshots and screenshot titles
+var p1_screenshots = document.getElementsByClassName("p1 img");
+var p2_screenshots = document.getElementsByClassName("p2 img");
+var project_screenshots = [];
+project_screenshots.push(p1_screenshots);
+project_screenshots.push(p2_screenshots);
+
+var p1_screenshot_titles = document.getElementsByClassName("p1 img_title");
+var p2_screenshot_titles = document.getElementsByClassName("p2 img_title");
+var project_screenshot_titles = [];
+project_screenshot_titles.push(p1_screenshot_titles);
+project_screenshot_titles.push(p2_screenshot_titles);
+
+// working values for current project screenshots/screenshot titles
+var screenshots = p1_screenshots;
+var screenshot_titles = p1_screenshot_titles;
 var current_screenshot = 0;
 
 var buttons = document.getElementsByClassName("nav_button");
@@ -82,6 +97,7 @@ function advance_page(which_buttons, direction) {
 function change_project(project) {
     which_project = project;
 
+    // hide current panels and switch to new project
     for (var i = 0; i < panels.length; i++) {
         panels[i].classList.add("hide");
         panel_titles[i].classList.add("hide");
@@ -92,4 +108,16 @@ function change_project(project) {
     panels[0].classList.remove("hide");
     panel_titles[0].classList.remove("hide");
     current_panel = 0;
+
+    // hide current screenshots and switch to new project
+    for (var i = 0; i < screenshots.length; i++) {
+        screenshots[i].classList.add("hide");
+        screenshot_titles[i].classList.add("hide");
+    }
+
+    screenshots = project_screenshots[which_project-1];
+    screenshot_titles = project_screenshot_titles[which_project-1];
+    screenshots[0].classList.remove("hide");
+    screenshot_titles[0].classList.remove("hide");
+    current_screenshot = 0;
 }
