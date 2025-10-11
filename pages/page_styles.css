@@ -8,15 +8,27 @@ body {
     height: 98vh;
 }
 
-.nav_button {
-    width: 50%;
-    height: 100%;
+button {
+    background-color: #BFC0C0;
 }
+
+button:hover {
+    background-color: #E0E0E0;
+}
+
+    .nav_button {
+        width: 50%;
+        height: 100%;
+    }
 
 select {
     background-color: #BFC0C0;
     color: #292D3C;
     font-weight: bold;
+}
+
+select:hover {
+    background-color: #E0E0E0;
 }
 
 a {

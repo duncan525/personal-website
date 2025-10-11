@@ -9,6 +9,39 @@ body {
     column-gap: 1vw;
 }
 
+button {
+    background-color: #BFC0C0;
+    width: 50%;
+    height: 100%;
+}
+
+button:hover {
+    background-color: #E0E0E0;
+}
+
+select {
+    background-color: #BFC0C0;
+    color: #2D3142;
+}
+
+    select:hover {
+        background-color: #E0E0E0;
+    }
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+img.link:hover {
+    filter: brightness(80%);
+}
+
+
 #left {
     display: grid;
     grid-template-rows: 28.7% auto 25vh auto;
@@ -81,10 +114,6 @@ body {
                 padding-right: 10px;
             }
 
-    a {
-        color: white;
-    }
-
     /* only :hover as a placeholder: should be changed to be click-interactive later */
         .dropped #dropdown1_content {
             display: inherit;
@@ -150,6 +179,7 @@ body {
                 #project_sel {
                     background: #E0E0E0;
                     align-content: center;
+                    display: inline-flex;
                 }
 
             #project_img {
@@ -226,8 +256,6 @@ body {
                 margin: 7px 7px 7px 7px;
                 border: 2px solid white;
                 border-radius: 3px;
-                background-color: darkgrey;
-                color: white;
             }
 
             #email {
@@ -246,6 +274,10 @@ body {
                 border-radius: 3px;
                 background-color: white;
                 color: grey;
+
+                /* this button gets special settings cause i say so*/
+                width: auto;
+                height: auto;
             }
 
                 #submit_button:hover {
