@@ -154,7 +154,7 @@ img.link:hover {
 #rightside {
     display: grid;
     width: 57vw;
-    grid-template-rows: 38.6vh auto auto;
+    grid-template-rows: 38.6vh 30vh auto;
     row-gap: 1vh;
 }
 
@@ -207,20 +207,40 @@ img.link:hover {
             }
 
     #mid {
-        background: #4F5D75;
         display: grid;
-        grid-template-columns: 33% 34% 33%;
-        border: 2px solid #292D3C;
+        grid-template-columns: 96% 4%;
     }
 
-        #one, #two, #three {
-            background: #2D3142;
-            margin: 5% 5% 5% 5%;
-            border: 2px solid white;
-            border-radius: 25%;
+        #content-mid {
+            display: grid;
+            grid-template-columns: 32% 32% 32%;
+            border: 2px solid #292D3C;
+            background: #4F5D75;
+        }
+
+            .certification_title {
+                margin: 0 0 5% 0;
+                text-decoration: underline;
+            }
+
+            #one, #two, #three {
+                background: #2D3142;
+                margin: 5% 5% 5% 5%;
+                border: 2px solid white;
+                border-radius: 25%;
+                color: white;
+                text-align: center;
+                padding: 15px;
+            }
+
+        #label-mid {
+            transform: rotate(90deg);
+            transform-origin: center;
+            text-wrap-mode: nowrap;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             color: white;
-            text-align: center;
-            padding: 15px;
         }
 
     #low {
