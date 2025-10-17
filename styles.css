@@ -44,7 +44,7 @@ img.link:hover {
 
 #left {
     display: grid;
-    grid-template-rows: 28.7% auto 25vh auto;
+    grid-template-rows: 28.7% 36vh 25vh auto;
     border: 2px solid #292D3C;
 }
 
@@ -71,6 +71,7 @@ img.link:hover {
         background: #4F5D75;
         color: #E0E0E0;
         padding: 2vh 2.5vw 0vh 1.5vw;
+        overflow: scroll;
     }
 
     #dropdowns {
@@ -88,7 +89,7 @@ img.link:hover {
             padding: 3px;
             border: 2px solid white;
             margin: 10px;
-            color: white;
+            color: #292D3C;
         }
 
             .dropdown_title {
@@ -96,6 +97,7 @@ img.link:hover {
                 margin-top: 0px;
                 margin-bottom: -10px;
                 position: relative;
+                color: white;
                 top: -5px;
             }
 

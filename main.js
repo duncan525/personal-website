@@ -106,18 +106,26 @@ var titles = new Array("Untitled Game", "The Sodfather", "This Website")
 var descriptions = new Array(images.length)
 
 descriptions[0] = new Array(2)
-descriptions[0][0] = "This is a description of the project to the left. Maybe the description continues, and then \
-                    continues further. At this point, I must have described enough to end the paragraph."
-descriptions[0][1] = "Here is another paragraph of description. Hopefully, by now, I've given a clear and concise \
-                    description of this project. Perhaps I will even include a link <strong>here</strong>."
+descriptions[0][0] = "I started this project after a friend of mine asked me to participate in the \
+                    <a href='https://itch.io/jam/gmtk-2025'>GMTK Game Jam 2025</a> with him. It was initially \
+                    a small, \"learn by doing\" project after learning the ropes of Godot and GDScript on \
+                    Youtube, but I got attached."
+descriptions[0][1] = "I hope to tie up some loose ends and \"release\" it by the end of the year. All the \
+                    code and art is my work. I want to make some sound effects and music as well, but those are \
+                    secondary goals."
 
 descriptions[1] = new Array(2)
-descriptions[1][0] = "This is paragraph 1 of the description for The Sodfather."
-descriptions[1][1] = "This is paragraph 2 of the description for The Sodfather."
+descriptions[1][0] = "<em>The Sodfather</em> (patent pending) is the result of the game jam! It was a crazy \
+                    few days. My friend and I spent many hours in a local coffee shop throwing it together."
+descriptions[1][1] = "It was my first time using git and Github. There was a lot of back-and-forth to make sure \
+                    we didn't mess with the same project files and end up losing some work on the next push/pull."
 
 descriptions[2] = new Array(2)
-descriptions[2][0] = "This is paragraph 1 of the description for this website."
-descriptions[2][1] = "whoa... thats meta..."
+descriptions[2][0] = "This website is the result of my joining BU's chapter of Upsilon Pi Epsilon. I had to make \
+                    a project over the span of a month, and I thought it would be cool to get familiar with \
+                    HTML, CSS, and Javascript."
+descriptions[2][1] = "If the website isn't an ongoing project, I don't know what is. I'll add more pages, a \
+                    working mobile layout, and some backend stuff down the road."
 
 var left_button = document.getElementById("left_button")
 left_button.addEventListener("click", function() {
