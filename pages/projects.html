@@ -210,11 +210,32 @@
                 enemy lives up to those ideals, but they still guided the way I approached design.
             </p>
 
-            <p></p>
+            <p> Some of the biggest challenges I faced during development came from enemies and the way 
+                they interacted with the game world. For example, "spitters" (cannonlike enemies in
+                the lava-themed area) seem to have a deep hatred for conveyor belts and walls. They like
+                to get stuck inside the wall next to a conveyor or fall off the edge.
+            </p>
+
+            <p> Two enemies that I'm particularly happy with are the exploding fishlike creatures in the
+                sky area and the lava snakes in the lava-themed area. </p>
         </div>
 
         <div class="p1 panel hide">
-            <p>panel 1.4 text</p>
+            <p> I learned how to make a save/load system from looking at how my friend set up the one for
+                <em>Sodfather</em>.
+            </p>
+            <p> I create an instance of Godot's ConfigFile object and use its set_value()
+                method to write data from variables that hold important information about the game's current
+                state. Later, that data is read from the ConfigFile and put back into those variables. This 
+                functionality is split across a few functions that also allow for changing save files and 
+                resetting save data.
+            </p>
+
+            <p> The whole system lives in the Global script, which provides a space to coordinate interactions
+                between game systems and store important information. Some of the most important systems in the
+                game (i.e., opening/closing doors, keeping track of collectibles, changing scenes) are linked 
+                strongly to this script.
+            </p>
         </div>
 
         <div id="intro_text 2" class = "p2 panel hide">
