@@ -58,7 +58,35 @@
 
                 <div class="p2 takeaways_content hide">
                     <ul>
-                        <li> p2 takeaways_content </li>
+                        <li> Collaborating in real time
+                            <ul>
+                                <li class="inner_li">
+                                    My friend and I were in constant verbal communication
+                                    about gameplay/design ideas as well as git commits to
+                                    avoid conflicts
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li> Working under pressure
+                            <ul>
+                                <li class="inner_li">
+                                    The time limit forced us to limit the scope of the
+                                    project and work quickly, which was both fun and
+                                    stressful
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li> Providing support after release
+                            <ul>
+                                <li class="inner_li">
+                                    We spent most of the rest of the jam fixing bugs
+                                    reported by our playtesters (willing friends)
+                                </li>
+                            </ul>
+                        </li>
+
                     </ul>
                 </div>
 
@@ -86,9 +114,9 @@
 
                 <div id="mid1aii">
                     <select name = "select project" id="select_project">
-                        <option value="1" class="project_title">Project 1</option>
-                        <option value="2" class="project_title">Project 2</option>
-                        <option value="3" class="project_title">Project 3</option>
+                        <option value="1" class="project_title">Untitled Game</option>
+                        <option value="2" class="project_title">The Sodfather</option>
+                        <option value="3" class="project_title">Personal Website</option>
                     </select>
                 </div>
             
@@ -175,7 +203,7 @@
                 <div class="p2 links hide">
                     <p> <a href="https://github.com/alnewma/the-sodfather">github repository</a>
                     </p>
-                    <p> <a href="https://dozing-bison.itch.io/the-sodfather"></a>download and project page </p>
+                    <p> <a href="https://dozing-bison.itch.io/the-sodfather">download and project page</a></p>
                 </div>
 
                 <div class="p3 links hide">
@@ -269,7 +297,7 @@
                 thought we could do something that relates to the life cycle of a plant.
             </p>
 
-            <p> The basic premise is that, over the course of a 20 second loop, the player will go through 4
+            <p> The basic premise is that, over the course of a 20 second loop, the player will grow through 3
                 life stages, each with its own abilities and drawbacks. During one stage, they can "germinate,"
                 or lay a seed, as long as they have both a nutrient and a water resource. On the next cycle,
                 the player will respawn from that point.
@@ -284,29 +312,85 @@
         </div>
         
         <div class="p2 panel hide">
-            <p>panel 2.2 text</p>
+            <p> The loop system is the central axis of the game. It's split into three stages: sprout,
+                sapling, and tree. Sprouts can fit through small spaces, but they can't jump. Saplings
+                can jump and germinate a seed, but can't fit through small spaces. Trees are immobile, but
+                serve as platforms on the next loop cycle.
+            </p>
+
+            <p> In code, the loop system's functionality is split between two objects: &lt;time_bar&gt;, which
+                is a UI element that also keeps track of the loop time, and &lt;character&gt;, which is the playable
+                character. Every frame, &lt;character&gt; retrieves the time from &lt;time_bar&gt; and uses it to determine
+                whether or not to change its state to a new stage.
+            </p>
+
+            <p> The player character is essentially a bunch of layered collision boxes attached to a script.
+                The script determines what collision to enable depending on the player's state.
+            </p>
         </div>
 
         <div class="p2 panel hide">
-            <p>panel 2.3 text</p>
+            <p> Death happens when touching a hazard or ending a loop without germinating. Collecting
+                both a water and a nutrient resource is required to germinate. Germination can only happen
+                in the &lt;STAGES.SAPLING&gt; state.
+            </p>
+
+            <p> There are two special objects, &lt;placed_seed&gt; and &lt;placed_tree&gt;, that ensure
+                a seamless transition between death and respawning.
+            </p>
+
+            <p> &lt;placed_seed&gt;, identical to the first 
+                frame of the player's respawn animation, instantiates when the player presses the "set_seed"
+                key and is removed on respawn. That way, the seed that appears upon germination seems like 
+                it sprouts into a new player character on loop reset.
+            </p>
+
+            <p> &lt;placed_tree&gt; instantiates just before the loop resets,
+                which makes it appear that the player character left behind its old body as a platform.
+            </p>
         </div>
 
         <div class="p2 panel hide">
-            <p>panel 2.4 text</p>
+            <p> Levels are designed around the loop mechanic and a handful of puzzle elements. Puzzle 
+                elements (including &lt;nutrient_resource&gt;, &lt;water_resource&gt;, &lt;geyser&gt;,
+                &lt;rock&gt;, and &lt;river&gt;) force the player into a particular path around the
+                level.
+            </p>
+
+            <p> The player's ability to traverse the level is limited by &lt;time_bar&gt; and each stage.
+                Much of the gameplay revolves around finding enough resource elements in time to germinate
+                and avoid death. The end of each loop is important as well: &lt;placed_tree&gt; is a platform
+                that is often required to progress. Ensuring its correct placement under the time restriction
+                provides some excitement and pressure (we hoped).
+            </p>
+
+            <p> &lt;geyser&gt; and &lt;rock&gt; work as a lock-and-key system. Trigger the geyser to remove
+                the rock preventing progression. &lt;river&gt; does less to restrict traversal and is used
+                less often.
+            </p>
         </div>
 
         <div class = "p3 panel hide">
-            <p>here is a bunch of text for intro_text. hopefully this will be
-            enough text to wrap around a few times by the time i finish this
-            sentence.
+            <p> I first created this website when I joined BU's chapter of <a href="https://upe.acm.org/">
+                Upsilon Pi Epsilon</a> as a required project. I wanted to try something totally foreign to
+                me, so I settled on learning enough HTML, CSS, and Javascript to make a small personal
+                website.
             </p>
-            <p>this is the next paragraph of text in this section of the 
-            panel. god help us all
+
+            <p> I expected to spend much more time with the Javascript code, but it turns out that CSS <s>wants
+                me to suffer</s> can be very fiddly, especially as I learn. I ended up using grid displays for
+                most of the formatting.
             </p>
+
+            <p>The main Javascript feature I wanted to implement (a comment form that will send me an email)
+                needs backend work, which was outside the initial scope of the project. That feature, along
+                with dynamic resizing support, will come later.
+            </p>
+
         </div>
         
         <div class="p3 panel hide">
-            <p>panel 3.2 text</p>
+            <p> There seems to be a lot of depth to CSS.</p>
         </div>
 
         <div class="p3 panel hide">

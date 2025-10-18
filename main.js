@@ -121,7 +121,8 @@ descriptions[1][1] = "It was my first time using git and Github. There was a lot
                     we didn't mess with the same project files and end up losing some work on the next push/pull."
 
 descriptions[2] = new Array(2)
-descriptions[2][0] = "This website is the result of my joining BU's chapter of Upsilon Pi Epsilon. I had to make \
+descriptions[2][0] = "This website is the result of my joining BU's chapter of <a href=\"https://upe.acm.org/\"> \
+                    Upsilon Pi Epsilon</a>. I had to make \
                     a project over the span of a month, and I thought it would be cool to get familiar with \
                     HTML, CSS, and Javascript."
 descriptions[2][1] = "If the website isn't an ongoing project, I don't know what is. I'll add more pages, a \

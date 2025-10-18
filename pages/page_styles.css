@@ -33,11 +33,11 @@ select {
 
 a {
     color: white;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
     a:hover {
-        text-decoration: underline;
+        text-decoration: none;
     }
 
 li {
@@ -86,6 +86,8 @@ li {
         #left2b {
             background-color: #D0D0D0;
             font-size: larger;
+            overflow: scroll;
+            padding-right: 1vw;
         }
 
 #mid {

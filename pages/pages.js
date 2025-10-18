@@ -12,9 +12,9 @@ var p3_takeaways = document.getElementsByClassName("p3 takeaways_content")[0];
 var project_takeaways = [];
 project_takeaways.push(p1_takeaways, p2_takeaways, p3_takeaways);
 
-var p1_links = document.getElementsByClassName("p1 links");
-var p2_links = document.getElementsByClassName("p2 links");
-var p3_links = document.getElementsByClassName("p3 links");
+var p1_links = document.getElementsByClassName("p1 links")[0];
+var p2_links = document.getElementsByClassName("p2 links")[0];
+var p3_links = document.getElementsByClassName("p3 links")[0];
 var project_links = [];
 project_links.push(p1_links, p2_links, p3_links);
 
@@ -31,11 +31,12 @@ var p3_panel_titles = document.getElementsByClassName("p3 panel_title");
 var project_panel_titles = [];
 project_panel_titles.push(p1_panel_titles, p2_panel_titles, p3_panel_titles);
 
-// working values for current project panels/panel titles/takeaway content
+// working values for all content
 var panels = p1_panels;
 var panel_titles = p1_panel_titles;
 var takeaways = p1_takeaways;
 var current_panel = 0;
+var links = p1_links;
 
 // arrays for project screenshots and screenshot titles
 var p1_screenshots = document.getElementsByClassName("p1 img");
@@ -139,10 +140,13 @@ function change_project(project) {
     screenshot_titles[0].classList.remove("hide");
     current_screenshot = 0;
 
-    // change to appropriate takeaway
+    // change to appropriate takeaways
     takeaways.classList.add("hide");
-    console.log("takeaways before change: ", takeaways);
     takeaways = project_takeaways[which_project-1];
-    console.log("takeaways after change: ", takeaways);
     takeaways.classList.remove("hide");
+
+    // change to appropriate project links
+    links.classList.add("hide");
+    links = project_links[which_project-1];
+    links.classList.remove("hide");
 }

@@ -30,11 +30,11 @@ select {
 
 a {
     color: white;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
     a:hover {
-        text-decoration: underline;
+        text-decoration: none;
     }
 
 img.link:hover {
