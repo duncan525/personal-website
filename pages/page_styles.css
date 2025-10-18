@@ -45,7 +45,7 @@ li {
 }
 
     .inner_li {
-        margin: 1% 0 1% 0;
+        margin: 3% 0 3% 0;
     }
 
 #left {
@@ -145,6 +145,8 @@ li {
 
             #mid1bi {
                 margin: auto;
+                padding-left: 10%;
+                padding-right: 10%;
             }
 
             #mid1bii {

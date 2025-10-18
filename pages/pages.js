@@ -5,26 +5,36 @@ project.addEventListener("change", function() {
 
 var which_project = 1;
 
+// arrays for project takeaways, project links
+var p1_takeaways = document.getElementsByClassName("p1 takeaways_content")[0]; // why do i need to index here?? is it bc of the ul/li stuff?
+var p2_takeaways = document.getElementsByClassName("p2 takeaways_content")[0];
+var p3_takeaways = document.getElementsByClassName("p3 takeaways_content")[0];
+var project_takeaways = [];
+project_takeaways.push(p1_takeaways, p2_takeaways, p3_takeaways);
+
+var p1_links = document.getElementsByClassName("p1 links");
+var p2_links = document.getElementsByClassName("p2 links");
+var p3_links = document.getElementsByClassName("p3 links");
+var project_links = [];
+project_links.push(p1_links, p2_links, p3_links);
+
 // arrays for project panels and panel titles
 var p1_panels = document.getElementsByClassName("p1 panel");
 var p2_panels = document.getElementsByClassName("p2 panel");
 var p3_panels = document.getElementsByClassName("p3 panel");
 var project_panels = [];
-project_panels.push(p1_panels);
-project_panels.push(p2_panels);
-project_panels.push(p3_panels);
+project_panels.push(p1_panels, p2_panels, p3_panels);
 
 var p1_panel_titles = document.getElementsByClassName("p1 panel_title");
 var p2_panel_titles = document.getElementsByClassName("p2 panel_title");
 var p3_panel_titles = document.getElementsByClassName("p3 panel_title");
 var project_panel_titles = [];
-project_panel_titles.push(p1_panel_titles);
-project_panel_titles.push(p2_panel_titles);
-project_panel_titles.push(p3_panel_titles);
+project_panel_titles.push(p1_panel_titles, p2_panel_titles, p3_panel_titles);
 
-// working values for current project panels/panel titles
+// working values for current project panels/panel titles/takeaway content
 var panels = p1_panels;
 var panel_titles = p1_panel_titles;
+var takeaways = p1_takeaways;
 var current_panel = 0;
 
 // arrays for project screenshots and screenshot titles
@@ -32,17 +42,13 @@ var p1_screenshots = document.getElementsByClassName("p1 img");
 var p2_screenshots = document.getElementsByClassName("p2 img");
 var p3_screenshots = document.getElementsByClassName("p3 img");
 var project_screenshots = [];
-project_screenshots.push(p1_screenshots);
-project_screenshots.push(p2_screenshots);
-project_screenshots.push(p3_screenshots)
+project_screenshots.push(p1_screenshots, p2_screenshots, p3_screenshots);
 
 var p1_screenshot_titles = document.getElementsByClassName("p1 img_title");
 var p2_screenshot_titles = document.getElementsByClassName("p2 img_title");
 var p3_screenshot_titles = document.getElementsByClassName("p3 img_title");
 var project_screenshot_titles = [];
-project_screenshot_titles.push(p1_screenshot_titles);
-project_screenshot_titles.push(p2_screenshot_titles);
-project_screenshot_titles.push(p3_screenshot_titles);
+project_screenshot_titles.push(p1_screenshot_titles, p2_screenshot_titles, p3_screenshot_titles);
 
 // working values for current project screenshots/screenshot titles
 var screenshots = p1_screenshots;
@@ -132,4 +138,11 @@ function change_project(project) {
     screenshots[0].classList.remove("hide");
     screenshot_titles[0].classList.remove("hide");
     current_screenshot = 0;
+
+    // change to appropriate takeaway
+    takeaways.classList.add("hide");
+    console.log("takeaways before change: ", takeaways);
+    takeaways = project_takeaways[which_project-1];
+    console.log("takeaways after change: ", takeaways);
+    takeaways.classList.remove("hide");
 }
