@@ -52,7 +52,6 @@
                                 </li>
                             </ul>
                         </li>
-
                     </ul>
                 </div>
 
@@ -86,13 +85,34 @@
                                 </li>
                             </ul>
                         </li>
-
                     </ul>
                 </div>
 
                 <div class="p3 takeaways_content hide">
                     <ul>
-                        <li> p3 takeaways_content </li>
+                        <li> There's a lot of depth to CSS
+                            <ul>
+                                <li class="inner_li">
+                                    It feels like I could get very far with just CSS
+                                    formatting. It's worth building that skill
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li> Scope creep is deadly
+                            <ul>
+                                <li class="inner_li">
+                                    It's easy for a project to turn into something too
+                                    big for a certain time frame
+                                </li>
+
+                                <li class="inner_li">
+                                    It's okay this time since the site is an ongoing
+                                    project by nature, but I'll need to be careful
+                                    in the future
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
 
@@ -131,13 +151,13 @@
 
                     <h2 class="p2 panel_title hide">Introduction</h2>
                     <h2 class="p2 panel_title hide">Loop System</h2>
-                    <h2 class="p2 panel_title hide">Death and Respawning</h2>
+                    <h2 class="p2 panel_title hide">Death & Respawning</h2>
                     <h2 class="p2 panel_title hide">Level Design</h2>
 
                     <h2 class="p3 panel_title hide">Introduction</h2>
-                    <h2 class="p3 panel_title hide">CSS Formatting</h2>
+                    <h2 class="p3 panel_title hide">Design & Formatting</h2>
                     <h2 class="p3 panel_title hide">Javascript</h2>
-                    <h2 class="p3 panel_title hide">To-do</h2>
+                    <h2 class="p3 panel_title hide">Moving Forward</h2>
                 </div>
 
                 <div id="mid1bii">
@@ -162,6 +182,7 @@
 
                 <img class="p3 img hide" src="../images/project3_page/comment_form.png" alt="comment form">
                 <img class="p3 img hide" src="../images/project3_page/switching_projects.png" alt="switching projects">
+                <img class="p3 img hide" src="../images/project3_page/broken_layout.png" alt="broken page layout">
 
             </div>
 
@@ -181,6 +202,7 @@
 
                     <h3 class="p3 img_title hide">Unfinished comment form</h3>
                     <h3 class="p3 img_title hide">Switching projects with Javascript</h3>
+                    <h3 class="p3 img_title hide">Mobile-friendly design</h3>
                 </div>
 
                 <div id="mid2bii">
@@ -371,10 +393,10 @@
         </div>
 
         <div class = "p3 panel hide">
-            <p> I first created this website when I joined BU's chapter of <a href="https://upe.acm.org/">
-                Upsilon Pi Epsilon</a> as a required project. I wanted to try something totally foreign to
-                me, so I settled on learning enough HTML, CSS, and Javascript to make a small personal
-                website.
+            <p> I first created this website as a required project when I joined BU's chapter of 
+                <a href="https://upe.acm.org/"> Upsilon Pi Epsilon</a>. I wanted to try something totally
+                foreign to me, so I settled on learning enough HTML, CSS, and Javascript to make a small
+                personal website.
             </p>
 
             <p> I expected to spend much more time with the Javascript code, but it turns out that CSS <s>wants
@@ -390,15 +412,66 @@
         </div>
         
         <div class="p3 panel hide">
-            <p> There seems to be a lot of depth to CSS.</p>
+            <p> To come up with the design for each page, I started by drawing on a blank piece of paper.
+                It seemed like the easiest way to implement those designs would be with a series of &lt;div&gt;
+                tags, each with its own grid display.
+            </p>
+
+            <p> I managed to implement the designs this way without much compromise, but the formatting breaks
+                quickly as the window's aspect ratio changes. I'm sure part of the issue comes from the
+                uncoordinated mess of units I used to define the sizes of each grid. They make it difficult to
+                predict how the page will react to resizing.
+            </p>
+
+            <p> At the moment, I plan to fix the resizing problem by just defining a different, more
+                flexible layout for whatever pixel width first breaks the formatting. As I figure that out, I
+                hope I'll come upon some new information that helps ease the initial problem.
+            </p>
         </div>
 
         <div class="p3 panel hide">
-            <p>panel 3.3 text</p>
+            <p> I use Javascript when I reach the limit of CSS's ability to respond to user input (at least
+                as far as I'm aware of the limitations). For example, the dropdowns on the left side of the
+                home page use Javascript to modify CSS properties in response to a click.
+            </p>
+
+            <p> I also use it for the buttons that loop through images or text. I index into certain arrays
+                that contain references to whatever information I want to display based on which button is
+                clicked. For example, clicking on the buttons in the center window of this page will update
+                where the &lt;project_screenshots&gt; array is indexed. That information determines which
+                image is not hidden and is therefore visible.
+            </p>
+
+            <p> As far as I'm aware, I'll also use Javascript whenever I implement the backend features I
+                need for the comment form on the home page.
+            </p>
         </div>
 
         <div class="p3 panel hide">
-            <p>panel 3.4 text</p>
+            <p> The three major features I need to implement for the website to be done are dynamic resizing,
+                a working comment form, and the final two pages.
+            </p>
+
+            <p> In the tutorials I used to learn HTML, CSS, and Javascript, I learned about certain CSS rules
+                that change which code is used for formatting at certain pixel widths. I'll look into that more
+                when I implement dynamic resizing.
+            </p>
+
+            <p> As I've mentioned before, the comment form needs some backend functionality to work properly.
+                At the moment, pressing "submit" will log an array with whatever the values of each input
+                field are. I plan to use those values to generate well-organized, readable text that'll form
+                the content of the email I receive. 
+            </p>
+
+            <p> I want to include a "credits" page so I can list the resources I used in the development of
+                each project. For example, I used certian tutorials from <a href="https://www.youtube.com/
+                @Brackeys">Brackeys</a> to learn how to work with Godot and GDScript. I think people should
+                get credit for putting out free, high-quality tutorials that enable people like me to learn
+                new things.
+            </p>
+
+            <p> I'm not sure what the second new page will contain. If I can't figure that part
+                out, I'll scrap it. </p>
         </div>
 
     </div>

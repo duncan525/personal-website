@@ -5,6 +5,8 @@ project.addEventListener("change", function() {
 
 var which_project = 1;
 
+var buttons = document.getElementsByClassName("nav_button");
+
 // arrays for project takeaways, project links
 var p1_takeaways = document.getElementsByClassName("p1 takeaways_content")[0]; // why do i need to index here?? is it bc of the ul/li stuff?
 var p2_takeaways = document.getElementsByClassName("p2 takeaways_content")[0];
@@ -31,13 +33,6 @@ var p3_panel_titles = document.getElementsByClassName("p3 panel_title");
 var project_panel_titles = [];
 project_panel_titles.push(p1_panel_titles, p2_panel_titles, p3_panel_titles);
 
-// working values for all content
-var panels = p1_panels;
-var panel_titles = p1_panel_titles;
-var takeaways = p1_takeaways;
-var current_panel = 0;
-var links = p1_links;
-
 // arrays for project screenshots and screenshot titles
 var p1_screenshots = document.getElementsByClassName("p1 img");
 var p2_screenshots = document.getElementsByClassName("p2 img");
@@ -51,12 +46,18 @@ var p3_screenshot_titles = document.getElementsByClassName("p3 img_title");
 var project_screenshot_titles = [];
 project_screenshot_titles.push(p1_screenshot_titles, p2_screenshot_titles, p3_screenshot_titles);
 
-// working values for current project screenshots/screenshot titles
+// working values for all content
+var panels = p1_panels;
+var panel_titles = p1_panel_titles;
+var current_panel = 0;
+
 var screenshots = p1_screenshots;
 var screenshot_titles = p1_screenshot_titles;
 var current_screenshot = 0;
 
-var buttons = document.getElementsByClassName("nav_button");
+var takeaways = p1_takeaways;
+
+var links = p1_links;
 
 // enable buttons; pass appropriate fields to advance_page
 for (var i = 0; i < buttons.length; i++) {
