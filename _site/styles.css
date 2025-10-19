@@ -1,0 +1,339 @@
+body {
+    background-color: #6b6b6b;
+    color: #2D3142;
+    /* courier new, TREBUCHET! */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 0.1fr 0.4fr 0.5fr 0.1fr;
+    column-gap: 1vw;
+}
+
+button {
+    background-color: #BFC0C0;
+    width: 50%;
+    height: 100%;
+}
+
+button:hover {
+    background-color: #E0E0E0;
+}
+
+select {
+    background-color: #BFC0C0;
+    color: #2D3142;
+}
+
+    select:hover {
+        background-color: #E0E0E0;
+    }
+
+a {
+    color: white;
+    text-decoration: underline;
+}
+
+    a:hover {
+        text-decoration: none;
+    }
+
+img.link:hover {
+    filter: brightness(80%);
+}
+
+
+#left {
+    display: grid;
+    grid-template-rows: 28.7% 36vh 25vh auto;
+    border: 2px solid #292D3C;
+}
+
+    #name_and_photo {
+        background: #E0E0E0;
+        display: grid;
+        grid-template-columns: 20vw 20vw;
+        padding-left: 7px;
+    }
+
+        #name {
+            padding-top: 1vh;
+            padding-left: 1vw;
+            font-size: 30px;
+        }
+        
+            .left {
+                height: 28vh;
+                width: 20vw;
+                object-fit: cover;
+            }
+
+    #intro_text {
+        background: #4F5D75;
+        color: #E0E0E0;
+        padding: 2vh 2.5vw 0vh 1.5vw;
+        overflow: scroll;
+    }
+
+    #dropdowns {
+        background: #4F5D75;
+        padding: 0vh 1.5vw 2vh 9px;
+        overflow: scroll;
+    }
+
+        #dropdown1, #dropdown2, #dropdown3 {
+            background: darkgray;
+        }
+
+        .dropdown {
+            height: auto;
+            padding: 3px;
+            border: 2px solid white;
+            margin: 10px;
+            color: #292D3C;
+        }
+
+            .dropdown_title {
+                padding: 10px 0px 10px 10px;
+                margin-top: 0px;
+                margin-bottom: -10px;
+                position: relative;
+                color: white;
+                top: -5px;
+            }
+
+            .dropdown_title:hover {
+                background-color: lightgrey;
+                padding-top: 5px;
+                margin-top: 5px;
+                padding-bottom: 5px;
+                margin-bottom: -5px;
+                border-radius: 5%;
+            }
+
+            #dropdown1_content, #dropdown2_content, #dropdown3_content {
+                display: none;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+    /* only :hover as a placeholder: should be changed to be click-interactive later */
+        .dropped #dropdown1_content {
+            display: inherit;
+            background: lightgrey;
+            border-radius: 3%;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding: 10px 10px 10px 10px;
+            
+        }
+
+        /* not sure why these next 2 selectors have to be separate from the last one but ok */
+        .dropped #dropdown2_content {
+            display: inherit;
+            background: lightgrey;
+            border-radius: 3%;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding: 10px 10px 10px 10px;
+        }
+
+        .dropped #dropdown3_content {
+            display: inherit;
+            background: lightgrey;
+            border-radius: 3%;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding: 10px 10px 10px 10px;
+        }
+
+    #contact {
+        background: #2D3142;
+        text-align: center;
+        color: #E0E0E0;
+    }
+
+
+#rightside {
+    display: grid;
+    width: 57vw;
+    grid-template-rows: 38.6vh 30vh auto;
+    row-gap: 1vh;
+}
+
+    #top {
+        display: grid;
+        grid-template-columns: 55% 45%;
+        border: 2px solid #292D3C;
+    }
+
+        #project {
+            display: grid;
+            grid-template-rows: 8vh 30vh;
+        }
+
+            #project_title {
+                background: #E0E0E0;
+                display: grid;
+                grid-template-columns: 60% 40%;
+                text-align: center;
+            }
+
+                #project_sel {
+                    background: #E0E0E0;
+                    align-content: center;
+                    display: inline-flex;
+                }
+
+            #project_img {
+                display: flex;
+                align-items: flex-start;
+                border: 2px solid #292D3C;
+            }
+
+                #img_container {
+                    height: 100%;
+                    width: 100%;
+                }
+
+                #right {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+
+            #project_des {
+                background: #BFC0C0;
+                padding: 5% 5% 5% 7%;
+                text-align: left;
+                overflow: scroll;
+            }
+
+    #mid {
+        display: grid;
+        grid-template-columns: 96% 4%;
+    }
+
+        #content-mid {
+            display: grid;
+            grid-template-columns: 32% 32% 32%;
+            border: 2px solid #292D3C;
+            background: #4F5D75;
+        }
+
+            .certification_title {
+                margin: 0 0 5% 0;
+                text-decoration: underline;
+            }
+
+            #one, #two, #three {
+                background: #2D3142;
+                margin: 5% 5% 5% 5%;
+                border: 2px solid white;
+                border-radius: 25%;
+                color: white;
+                text-align: center;
+                padding: 15px;
+            }
+
+        #label-mid {
+            transform: rotate(90deg);
+            transform-origin: center;
+            text-wrap-mode: nowrap;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+    #low {
+        display: grid;
+        grid-template-columns: 4% 43% 53%;
+        color: #E0E0E0;
+    }
+
+        .input {
+            height: 20px;
+            border-radius: 5%;
+        }
+
+        #label-low {
+            transform: rotate(-90deg);
+            transform-origin: center;
+            text-wrap-mode: nowrap;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #left-low {
+            background: #2D3142;
+            display: inherit;
+            grid-template-rows: 0.3fr 0.3fr 0.4fr;
+            border-top: 2px solid white;
+            border-left: 2px solid white;
+            border-bottom: 2px solid white;
+        }
+
+            #select_project {
+                margin: 7px 7px 7px 7px;
+                border: 2px solid white;
+                border-radius: 3px;
+            }
+
+            #email {
+                margin-left: 7px;
+                margin-right: 7px;
+                padding: 3px 3px 3px 3px;
+                border: 2px solid grey;
+                border-radius: 3px;
+                background-color: white;
+                align-self: center;
+            }
+
+            #submit_button {
+                margin: 0px 7px 7px 7px;
+                border: 2px solid grey;
+                border-radius: 3px;
+                background-color: white;
+                color: grey;
+
+                /* this button gets special settings cause i say so*/
+                width: auto;
+                height: auto;
+            }
+
+                #submit_button:hover {
+                    background-color: darkgrey;
+                    color: white;
+                }
+
+        #right-low {
+            background: #2D3142;
+            border-top: 2px solid white;
+            border-right: 2px solid white;
+            border-bottom: 2px solid white;
+        }
+
+            #issue_description {
+                margin: 7px 7px 7px 7px;
+                padding: 7px 7px 7px 7px;
+
+                align-self: center;
+
+                position:relative;
+                top: 2%;
+                right: 3%;
+                bottom: 2%;
+                left: 2%;
+                width: 87.5%;
+                height: 82%;
+
+                resize: none;
+            }
+
+
+
+/* ensures correct image is displayed */
+.hide {
+    display: none;
+}

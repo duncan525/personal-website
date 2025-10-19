@@ -1,0 +1,230 @@
+body {
+    background-color: #6b6b6b;
+    color: #292D3C;
+    /* courier new, TREBUCHET! */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: grid;
+    grid-template-columns: 0.25fr 0.5fr 0.25fr;
+    height: 98vh;
+}
+
+button {
+    background-color: #BFC0C0;
+}
+
+    button:hover {
+        background-color: #E0E0E0;
+    }
+
+        .nav_button {
+            width: 50%;
+            height: 100%;
+        }
+
+select {
+    background-color: #BFC0C0;
+    color: #292D3C;
+    font-weight: bold;
+}
+
+    select:hover {
+        background-color: #E0E0E0;
+    }
+
+a {
+    color: white;
+    text-decoration: underline;
+}
+
+    a:hover {
+        text-decoration: none;
+    }
+
+li {
+    margin-bottom: 5%;
+}
+
+    .inner_li {
+        margin: 3% 0 3% 0;
+    }
+
+#left {
+    display: grid;
+    grid-template-rows: 0.1fr 0.9fr;
+}
+
+    #left1 {
+        background-color: #2D3142;
+        margin-bottom: 1vw;
+        border: 2px solid white;
+        border-right: none;
+        color: white;
+        text-align: right;
+        font-size: 25px;
+        padding-right: 1vw;
+        padding-top: 1vh;
+    }
+
+    #left2 {
+        margin-top: 1vw;
+        border: 2px solid white;
+        display: grid;
+        grid-template-rows: 0.2fr 0.8fr;
+    }
+
+        #left2a {
+            background-color: #BFC0C0;
+            border-bottom: 4px solid white;
+            align-content: center;
+            padding: 0 5% 0 5%;
+        }
+
+            #takeaways_title {
+                text-align: center;
+            }
+
+        #left2b {
+            background-color: #D0D0D0;
+            font-size: larger;
+            overflow: scroll;
+            padding-right: 1vw;
+        }
+
+#mid {
+    display: grid;
+    grid-template-rows: 0.2fr 0.6fr 0.2fr;
+}
+
+    #mid1 {
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr;
+    }
+
+        #mid1a {
+            display: grid;
+            grid-template-rows: 0.5fr 0.5fr;
+        }
+
+            #mid1ai {
+                background-color: #2D3142;
+                margin-right: 1vw;
+                margin-bottom: 1vw;
+                border: 2px solid white;
+                border-left: none;
+                color: white;
+                text-align: left;
+                font-size: 25px;
+                padding-top: 1vh;
+            }
+
+            #mid1aii {
+                background-color: purple;
+                margin-left: 1vw;
+                margin-right: 1vw;
+                margin-top: 1vw;
+                border: 2px solid white;
+                border-bottom: 0;
+                color: white;
+            }
+
+                #select_project {
+                    width: 100%;
+                    height: 100%;
+                    font-size: larger;
+                    padding-left: 5%;
+                }
+
+        #mid1b {
+            background-color: #2D3142;
+            color: white;
+            margin-left: 1vw;
+            margin-bottom: 1vw;
+            border: 2px solid white;
+            border-right: none;
+            display: grid;
+            grid-template-columns: 0.6fr 0.4fr;
+        }
+
+            #mid1bi {
+                margin: auto;
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+
+            #mid1bii {
+                margin: 5px 5px 5px 5px;
+                align-content: center;
+                display: inline-flex;
+            }
+
+    #mid2 {
+        background-color: grey;
+        margin: 0 1vw 1vw 1vw;
+        border: 2px solid white;
+        display: grid;
+        grid-template-rows: 0.8fr 0.2fr;
+        overflow: hidden;
+    }
+
+        #mid2a {
+            overflow: hidden;
+            border-bottom: 2px solid white;
+        }
+
+            .img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+
+        #mid2b{
+            display: grid;
+            grid-template-columns: 0.8fr 0.2fr;
+        }
+
+            #mid2bi {
+                border-right: 2px solid white;
+                text-align: center;
+                background-color: #2D3142;
+                color: white;
+            }
+
+            #mid2bii {
+                display: inline-flex;
+                align-content: center;
+            }
+
+    #mid3 {
+        background-color: #4F5D75;
+        margin-right: 1vw;
+        border-top: 2px solid white;
+        border-right: 2px solid white;
+        border-bottom: 2px solid white;
+        overflow: scroll;
+    }
+
+        .fun_fact {
+            background-color: #2D3142;
+            border: 2px solid white;
+            color: white;
+            border-radius: 25%;
+            text-align: center;
+            overflow: scroll;
+            padding: 0 5% 0 5%;
+            margin: 2% 2% 2% 2%;
+            height: 80%;
+            justify-self: center;
+        }
+
+#right {
+    background-color: #4F5D75;
+    color: white;
+    border: 2px solid white;
+    padding: 5% 5% 5% 5%;
+    font-size: 18px;
+    overflow: scroll;
+}
+
+.hide {
+    display: none;
+}
