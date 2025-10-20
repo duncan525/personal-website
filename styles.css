@@ -59,12 +59,17 @@ img.link:hover {
             padding-top: 1vh;
             padding-left: 1vw;
             font-size: 30px;
+            margin-right: 10%;
         }
         
             .left {
                 height: 28vh;
                 width: 20vw;
                 object-fit: cover;
+            }
+
+            #photo {
+                border-left: 2px solid #292D3C;
             }
 
     #intro_text {
@@ -152,12 +157,13 @@ img.link:hover {
         color: #E0E0E0;
     }
 
-
+/* right-side panels */
 #rightside {
     display: grid;
     width: 57vw;
-    grid-template-rows: 38.6vh 30vh auto;
+    grid-template-rows: 38.6vh 30vh 27vh;
     row-gap: 1vh;
+    margin-right: 0;
 }
 
     #top {
@@ -216,6 +222,7 @@ img.link:hover {
         #content-mid {
             display: grid;
             grid-template-columns: 32% 32% 32%;
+            height: 29vh;
             border: 2px solid #292D3C;
             background: #4F5D75;
         }
@@ -233,6 +240,7 @@ img.link:hover {
                 color: white;
                 text-align: center;
                 padding: 15px;
+                overflow: scroll;
             }
 
         #label-mid {
@@ -243,6 +251,9 @@ img.link:hover {
             align-items: center;
             justify-content: center;
             color: white;
+            height: 1vh;
+            position: relative;
+            top: 13vh;
         }
 
     #low {
@@ -268,7 +279,7 @@ img.link:hover {
         #left-low {
             background: #2D3142;
             display: inherit;
-            grid-template-rows: 0.3fr 0.3fr 0.4fr;
+            grid-template-rows: 30% 30% 40%;
             border-top: 2px solid white;
             border-left: 2px solid white;
             border-bottom: 2px solid white;
@@ -336,4 +347,29 @@ img.link:hover {
 /* ensures correct image is displayed */
 .hide {
     display: none;
+}
+
+    .left {
+        width: 100%;
+    }
+
+/* RESPONSIVE RULES */
+@media screen and (max-width: 700px) and (min-width: 571px) {
+
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        display: inline-block;
+    }
+
+    #name_and_photo {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    #rightside {
+        width: auto;
+        margin-top: 1vh;
+    }
 }
