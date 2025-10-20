@@ -6,6 +6,7 @@ body {
     display: grid;
     grid-template-columns: 0.25fr 0.5fr 0.25fr;
     height: 98vh;
+    overflow-y: scroll;
 }
 
 button {
@@ -70,6 +71,7 @@ li {
         border: 2px solid white;
         display: grid;
         grid-template-rows: 0.2fr 0.8fr;
+        overflow: scroll;
     }
 
         #left2a {
@@ -137,24 +139,30 @@ li {
         #mid1b {
             background-color: #2D3142;
             color: white;
-            margin-left: 1vw;
             margin-bottom: 1vw;
             border: 2px solid white;
             border-right: none;
-            display: grid;
-            grid-template-columns: 0.6fr 0.4fr;
+            display: flex;
+            flex-direction: row;
+            overflow: hidden;
         }
 
             #mid1bi {
-                margin: auto;
-                padding-left: 10%;
-                padding-right: 10%;
+                width: auto;
+                margin: 5px 5px 5px 5px;
+                flex-grow: 1;
+                display: flex;
+                align-items: center;
+                overflow: scroll;
             }
 
             #mid1bii {
-                margin: 5px 5px 5px 5px;
                 align-content: center;
                 display: inline-flex;
+                width: min-content;
+                margin: 0px 0px 0px 5px;
+                border-left: 2px solid white;
+                flex-grow: 1;
             }
 
     #mid2 {
@@ -227,4 +235,10 @@ li {
 
 .hide {
     display: none;
+}
+
+/* responsive rules */
+
+@media screen and (max-width: 700px) {
+    
 }
