@@ -1,8 +1,3 @@
-var project = document.getElementById("select_project");
-project.addEventListener("change", function() {
-    change_project(project.value);
-})
-
 var which_project = 1;
 
 var buttons = document.getElementsByClassName("nav_button");
@@ -151,3 +146,24 @@ function change_project(project) {
     links = project_links[which_project-1];
     links.classList.remove("hide");
 }
+
+// deal with portrait detection on non-index pages (TEMPORARY fix for formatting problem)
+
+    // detect portait mode on mobile (on load) and alert accordingly
+    if (screen.availHeight > screen.availWidth) {
+        alertPortrait();
+    }
+
+    // ensure changing to portrait after load still alerts
+    screen.orientation.addEventListener("change", function() {
+        if (screen.availHeight > screen.availWidth) {
+            alertPortrait();
+        }
+    }
+    )
+
+    function alertPortrait() {
+        if (document.title != "Luke Duncan") {
+            alert("This page is best viewed in landscape mode!");
+        }
+    }

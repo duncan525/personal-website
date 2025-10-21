@@ -247,5 +247,7 @@ li {
         width: 1000px;
         height: 700px; /* this is crude and doesn't work. i want it to auto zoom to fill
                         all the vertical space of the device */
+                        /* ...which is itself not an ideal solution but maybe it's okay for now.
+                           maybe i can javascript a warning to turn phone horizontally? */
     }
 }
