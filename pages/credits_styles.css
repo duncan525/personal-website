@@ -1,0 +1,66 @@
+body {
+    background-color: #6b6b6b;
+    color: #292D3C;
+    /* courier new, TREBUCHET! */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: grid;
+    grid-template-rows: 0.1fr 0.9fr;
+    height: 98vh;
+    overflow-y: scroll;
+}
+
+a {
+    color: white;
+    text-decoration: underline;
+}
+
+    a:hover {
+        text-decoration: none;
+    }
+
+#top {
+    display: flex;
+    flex-direction: row;
+}
+
+    #nav {
+        background: #2D3142;
+        width: 49%;
+        border: 2px solid white;
+        margin-bottom: 1vw;
+        margin-right: 1vw;
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        padding-bottom: 10px;
+    }
+
+        .navlink {
+            padding: 0px 8px 0px 8px;
+        }
+
+    #choose_project {
+        background: yellow;
+        flex-grow: 1;
+        border: 2px solid white;
+        margin-left: 1vw;
+        display: flex;
+        flex-direction: row;
+    }
+
+        #project_text { /* how do i make this stuff justify to center???*/
+            flex-grow: 0.75;
+            font-size: 25px;
+        }
+
+        button {
+            flex-grow: 0.25;
+        }
+
+#content {
+    background: blue;
+    height: 85vh;
+}
+
