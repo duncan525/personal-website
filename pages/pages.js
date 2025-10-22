@@ -1,3 +1,8 @@
+var project = document.getElementById("select_project");
+project.addEventListener("change", function() {
+    change_project(project.value);
+})
+
 var which_project = 1;
 
 var buttons = document.getElementsByClassName("nav_button");
