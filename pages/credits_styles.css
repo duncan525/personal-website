@@ -27,7 +27,7 @@ a {
         background: #2D3142;
         width: 49%;
         border: 2px solid white;
-        margin-bottom: 1vw;
+        margin-bottom: 3vh;
         margin-right: 1vw;
         font-size: 25px;
         display: flex;
@@ -35,6 +35,7 @@ a {
         justify-content: center;
         color: white;
         padding-bottom: 10px;
+        /* box-shadow: 5px 5px 5px black inset; */
     }
 
         .navlink {
@@ -60,7 +61,67 @@ a {
         }
 
 #content {
-    background: blue;
     height: 85vh;
+    display: flex;
+    flex-direction: column;
 }
+
+    #content_top {
+        display: flex;
+        flex-direction: row;
+        flex-basis: 50%;
+    }
+
+        #credits_screenshot {
+            background: teal;
+            flex-basis: 50%;
+            border: 2px solid white;
+            margin-right: 1vw;
+        }
+        
+            #credits_img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                flex-basis: 50%;
+            }
+
+            #source_of_credits {
+                background: green;
+                flex-grow: 1;
+                border: 2px solid white;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                overflow: hidden;
+            }
+
+                #floating_text { /* why doesnt this display anything?? */
+                    background-color: lightblue;
+                    border: 2px solid white;
+                    border-radius: 20%;
+                    margin: 3% 3% 3% 3%;
+                    align-content: center;
+                    box-shadow: 10px 10px 5px black;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 2% 3% 2% 3%;
+                }
+
+                    #creator_link {
+                        background: red;
+                        flex-grow: 0.1;
+                        font-size: larger;
+                    }
+
+                    #floating_content {
+                        flex-grow: 0.9;
+                    }
+
+    #credits_text {
+        background: red;
+        flex-grow: 1;
+    }
 
