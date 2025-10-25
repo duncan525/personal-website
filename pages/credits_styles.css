@@ -152,3 +152,6 @@ a {
             text-align: left;
         }
 
+.hide {
+    display: none;
+}
