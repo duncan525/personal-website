@@ -4,6 +4,9 @@ const MAX_INDEX = 2;
 var pictures = document.getElementsByClassName("picture");
 var current_picture = pictures[index];
 
+var project_titles = document.getElementsByClassName("project_title");
+var current_project_title = project_titles[index];
+
 var creator_titles = document.getElementsByClassName("creator_title");
 var creator_contents = document.getElementsByClassName("creator_content");
 var current_creator_title = creator_titles[index];
@@ -19,11 +22,11 @@ var text_contents = document.getElementsByClassName("text_contents");
 var current_text_title = text_titles[index];
 var current_text_content = text_contents[index];
 
-var elements = [pictures, creator_titles, creator_contents, credits_titles, credits_contents,
-                text_titles, text_contents]
-var current_elements = [current_picture, current_creator_title, current_creator_content,
-                    current_credits_title, current_credits_content, current_text_title,
-                    current_text_content]
+var elements = [pictures, project_titles, creator_titles, creator_contents, credits_titles,
+                credits_contents, text_titles, text_contents];
+var current_elements = [current_picture, current_project_title, current_creator_title,
+                    current_creator_content, current_credits_title, current_credits_content,
+                    current_text_title, current_text_content];
 
 var button_left = document.getElementById("left_button");
 button_left.addEventListener("click", function(){

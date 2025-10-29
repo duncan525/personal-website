@@ -242,12 +242,12 @@ li {
 /* i don't see any way to restructure my html for a mobile aspect ratio. i
    probably need to just change the layout of the page entirely. whoops */
 @media screen and (max-width: 700px) {
-    /* ...maybe there's a way i can just force horizontal scroll instead of resizing? bad solution */
+    /* maybe there's a way i can just force horizontal scroll instead of resizing? */
     body {
         width: 1000px;
         height: 700px; /* this is crude and doesn't work. i want it to auto zoom to fill
                         all the vertical space of the device */
                         /* ...which is itself not an ideal solution but maybe it's okay for now.
-                           maybe i can javascript a warning to turn phone horizontally? */
+                           i'll javascript a warning to orient phone horizontally */
     }
 }
