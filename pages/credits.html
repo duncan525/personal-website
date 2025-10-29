@@ -3,7 +3,7 @@
 <head>
     <title>Credits</title>
     <link rel="stylesheet" href="credits_styles.css">
-    <script src="pages.js" defer></script> <!-- doesn't defer alert but whatever -->
+    <script src="credits.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- magically makes responsive rules work for mobile -->
 </head>
 
@@ -16,26 +16,38 @@
 
         <div id="choose_project">
             <p id="project_text">Project 1</p>
-            <button class="left">&lt;</button>
-            <button class="right">&gt;</button>
+            <button id="left_button">&lt;</button>
+            <button id="right_button">&gt;</button>
         </div>
     </div>
 
     <div id="content">
         <div id="content_top">
             <div id="credits_screenshot">
-                <img id="credits_img" src="../images/FirstGameImg.png"></img>
+                <img class="picture" src="../images/FirstGameImg.png"></img>
+                <img class="picture hide" src="../images/profile.png"></img>
+                <img class="picture hide" src="../images/TheSodfather.png"></img>
             </div>
 
             <div id="source_of_credits">
                 <div id="floating_text" class="floating_text">
                     <div class="title">
-                        <a href="#">creator here</a>
+                        <a href="#" class="creator_title">creator here</a>
+                        <a href="#" class="creator_title hide">creator 2 here</a>
+                        <a href="#" class="creator_title hide">creator 3 here</a>
                     </div>
 
-                    <div class="content">
+                    <div class="creator_content content">
                         source_of_credits includes general link
                         to creator and brief description
+                    </div>
+
+                    <div class="creator_content content hide">
+                        content 2
+                    </div>
+
+                    <div class="creator_content content hide">
+                        content 3
                     </div>
                 </div>
 
@@ -45,24 +57,56 @@
         <div id="credits">
             <div id="credits_links">
                 <div class="credits floating_text">
-                    <div class="title">
+                    <div class="credits_title title">
                         these are the links to the resources
                     </div>
 
-                    <div class="content">
+                    <div class="credits_title title hide">
+                        credits_title 2
+                    </div>
+
+                    <div class="credits_title title hide">
+                        credits_title 3
+                    </div>
+
+                    <div class="credits_content content">
                         here is link 1
+                    </div>
+
+                    <div class="credits_content content hide">
+                        here is link 2
+                    </div>
+
+                    <div class="credits_content content hide">
+                        here is link 3
                     </div>
                 </div>
             </div>
 
             <div id="credits_text">
                 <div class="credits floating_text">
-                    <div class="title">
+                    <div class="text_title title">
                         title
                     </div>
 
-                    <div class="content">
+                    <div class="text_title title hide">
+                        title 2
+                    </div>
+
+                    <div class="text_title title hide">
+                        title 3
+                    </div>
+
+                    <div class="text_content content">
                         this is a brief description of each thing
+                    </div>
+
+                    <div class="text_content content hide">
+                        des 2
+                    </div>
+
+                    <div class="text_content content hide">
+                        des 3
                     </div>
                 </div>
             </div>
