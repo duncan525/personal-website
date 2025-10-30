@@ -369,3 +369,9 @@ img.link:hover {
         margin-top: 1vh;
     }
 }
+
+@media screen and (max-height: 630px) {
+    body {
+        height: 650px;
+    }
+}
