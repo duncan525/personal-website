@@ -44,9 +44,10 @@ a {
         }
 
     #choose_project {
-        background: #2D3142;
+        background: #4F5D75;
         flex-grow: 1;
         border: 2px solid white;
+        border-bottom: 1px;
         margin-left: 1vw;
         display: flex;
         flex-direction: row;
@@ -82,9 +83,10 @@ a {
     }
 
         #credits_screenshot {
-            background: teal;
+            background: #4F5D75;
             flex-basis: 50%;
             border: 2px solid white;
+            border-bottom: none;
             margin-right: 1vw;
             height: 50vh;
         }
@@ -97,9 +99,10 @@ a {
             }
 
         #source_of_credits {
-            background: #4F5D75;
+            background: grey;
             flex-grow: 1;
             border: 2px solid white;
+            border-bottom: none;
             display: flex;
             justify-content: center;
             align-content: center;
@@ -107,7 +110,7 @@ a {
         }
 
             .floating_text {
-                background-color: #2D3142;
+                background-color: #BFC0C0;
                 border: 2px solid white;
                 border-radius: 20%;
                 margin: 3% 3% 3% 3%;
@@ -117,9 +120,11 @@ a {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                padding: 2% 3% 2% 3%;
+                padding: 2% 4% 4% 4%;
                 color: white;
                 flex-grow: 1;
+
+                overflow: scroll;
             }
 
                 .title {
@@ -136,25 +141,41 @@ a {
         flex-grow: 1;
         display: flex;
         flex-direction: row;
+        border-top: 2px solid white;
+        height: 30vh;
     }
 
         #credits_links {
             flex-basis: 45%;
-            background-color: blue;
             display: flex;
             justify-content: center;
+            background: #2D3142;
+            border: 2px solid white;
+            border-top: none;
+            border-right: none;
         }
 
         #credits_text {
+            flex-basis: 55%;
             flex-grow: 1;
-            background-color: green;
+            background-color: #2D3142;
             display: flex;
             justify-content: center;
+            border-right: 2px solid white;
+            border-bottom: 2px solid white;
         }
 
         .credits {
             text-align: left;
         }
+
+        .bottom {
+            background-color: #4F5D75;
+        }
+
+li {
+    margin: 3% 0 3% 0;
+}
 
 .hide {
     display: none;
