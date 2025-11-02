@@ -55,14 +55,14 @@ a {
     }
 
         .project_title { /* how do i make this stuff justify to center???*/
-            flex-grow: 0.75;
+            flex-basis: 65%;
             font-size: 25px;
             display: flex; /* flex display once again carries (this is how i justify to center!) */
             justify-content: center;
         }
 
         button {
-            flex-grow: 0.25;
+            flex-basis: 17.5%;
             box-shadow: 0px 0px 5px inset grey;
         }
 
@@ -99,7 +99,8 @@ a {
             }
 
         #source_of_credits {
-            background: grey;
+            background: #BFC0C0;
+            flex-basis: 50%;
             flex-grow: 1;
             border: 2px solid white;
             border-bottom: none;
@@ -107,10 +108,17 @@ a {
             justify-content: center;
             align-content: center;
             overflow: hidden;
+            height: 50vh;
         }
 
+            .creator_content {
+                overflow: scroll;
+                margin: 2% 3% 1.5% 3%;
+                border-radius: 5%;
+            }
+
             .floating_text {
-                background-color: #BFC0C0;
+                background-color: grey;
                 border: 2px solid white;
                 border-radius: 20%;
                 margin: 3% 3% 3% 3%;
@@ -124,17 +132,19 @@ a {
                 color: white;
                 flex-grow: 1;
 
-                overflow: scroll;
+
             }
 
                 .title {
-                    background: red;
                     flex-grow: 0.1;
                     font-size: larger;
+
                 }
 
                 .content {
                     flex-grow: 0.9;
+                    overflow: scroll;
+                    border-radius: 5%;
                 }
 
     #credits {
@@ -197,21 +207,27 @@ li {
             font-size: 25px;
             height: 10vh;
             flex-wrap: wrap;
-            width: 100%;
+            margin-right: 0;
+            width: 99.49%;
+        }
+
+        #choose_project {
+            margin-left: 0;
         }
 
 }
 
 @media screen and (max-width: 450px) {
+    
     #content_top {
         flex-direction: column;
         height: 90vh;
     }
 
-        #nav {
-            margin-bottom: 0;
+        #credits_screenshot {
+            margin-right: 0;
         }
-    
+
     #source_of_credits {
         height: 40vh;
     }

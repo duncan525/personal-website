@@ -48,7 +48,7 @@ img.link:hover {
 
 #left {
     display: grid;
-    grid-template-rows: 28.7% 36vh 25vh auto;
+    grid-template-rows: 28vh 36vh 25vh 8vh;
     border: 2px solid #292D3C;
 }
 
@@ -79,13 +79,17 @@ img.link:hover {
     #intro_text {
         background: #4F5D75;
         color: #E0E0E0;
-        padding: 2vh 2.5vw 0vh 1.5vw;
         overflow: scroll;
     }
 
+        #intro_text_content {
+            margin: 3% 3% 3% 3%;
+            border-radius: 5%;
+        }
+
     #dropdowns {
         background: #4F5D75;
-        padding: 0vh 1.5vw 2vh 9px;
+        padding: 0 1.5vw 2vh 9px;
         overflow: scroll;
     }
 
@@ -159,6 +163,8 @@ img.link:hover {
         background: #2D3142;
         text-align: center;
         color: #E0E0E0;
+        overflow: scroll;
+        margin-bottom: 0;
     }
 
 /* right-side panels */
@@ -372,10 +378,23 @@ img.link:hover {
         width: auto;
         margin-top: 1vh;
     }
+
 }
 
-@media screen and (max-height: 630px) {
-    body {
-        height: 650px;
+@media screen and (max-height: 430px) {
+    #label-mid, #label-low {
+        font-size: smaller;
     }
+
+    #left {
+        grid-template-rows: 28vh 36vh 25vh 12.5vh;
+    }
+
+        #submit_button {
+            overflow: scroll;
+        }
+
+        #issue_description {
+            height: 75%;
+        }
 }

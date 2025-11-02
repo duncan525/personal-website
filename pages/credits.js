@@ -17,16 +17,14 @@ var credits_contents = document.getElementsByClassName("credits_content");
 var current_credits_title = credits_titles[index];
 var current_credits_content = credits_contents[index];
 
-var text_titles = document.getElementsByClassName("text_title");
-var text_contents = document.getElementsByClassName("text_contents");
-var current_text_title = text_titles[index];
+var text_contents = document.getElementsByClassName("text_content");
 var current_text_content = text_contents[index];
 
 var elements = [pictures, project_titles, creator_titles, creator_contents, credits_titles,
-                credits_contents, text_titles, text_contents];
+                credits_contents, text_contents];
 var current_elements = [current_picture, current_project_title, current_creator_title,
                     current_creator_content, current_credits_title, current_credits_content,
-                    current_text_title, current_text_content];
+                    current_text_content];
 
 var button_left = document.getElementById("left_button");
 button_left.addEventListener("click", function(){
