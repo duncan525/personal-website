@@ -110,9 +110,8 @@ descriptions[0][0] = "I started this project after a friend of mine asked me to 
                     <a href='https://itch.io/jam/gmtk-2025'>GMTK Game Jam 2025</a> with him. It was initially \
                     a small, \"learn by doing\" project after learning the ropes of Godot and GDScript on \
                     Youtube, but I got attached."
-descriptions[0][1] = "I hope to tie up some loose ends and \"release\" it by the end of the year. All the \
-                    code and art is my work. I want to make some sound effects and music as well, but those are \
-                    secondary goals."
+descriptions[0][1] = "All the code and art is my work. You can download it <a href='https://estrelaplatina.itch.io/arbitrary-button-game'> \
+                    here</a>."
 
 descriptions[1] = new Array(2)
 descriptions[1][0] = "<em>The Sodfather</em> (patent pending) is the result of the game jam! It was a crazy \
@@ -125,8 +124,8 @@ descriptions[2][0] = "This website is the result of my joining BU's chapter of <
                     Upsilon Pi Epsilon</a>. I had to make \
                     a project over the span of a month, and I thought it would be cool to get familiar with \
                     HTML, CSS, and Javascript."
-descriptions[2][1] = "If the website isn't an ongoing project, I don't know what is. I'll add more pages, a \
-                    working mobile layout, and some backend stuff down the road."
+descriptions[2][1] = "If the website isn't an ongoing project, I don't know what is. Hopefully, I'll be able to \
+                     add some backend work down the road."
 
 var left_button = document.getElementById("left_button")
 left_button.addEventListener("click", function() {

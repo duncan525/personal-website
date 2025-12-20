@@ -219,18 +219,23 @@
 
             <div class="fun_fact">
                 <div class="p1 links">
-                    <p> i should put links to github/downloads and stuff here!
+                    <p> <a href="https://estrelaplatina.itch.io/arbitrary-button-game">download/project page</a>
+                    </p>
+                    <p> <a href="https://github.com/duncan525/first-game-repository">github repository</a>
                     </p>
                 </div>
 
                 <div class="p2 links hide">
+                    <p> <a href="https://dozing-bison.itch.io/the-sodfather">download/project page</a>
+                    </p>
                     <p> <a href="https://github.com/alnewma/the-sodfather">github repository</a>
                     </p>
-                    <p> <a href="https://dozing-bison.itch.io/the-sodfather">download and project page</a></p>
                 </div>
 
                 <div class="p3 links hide">
-                    <p> p3 links
+                    <p> <a href="https://duncan525.github.io/personal-website/">self-referential link</a>
+                    </p>
+                    <p> <a href="https://github.com/duncan525/personal-website">github repository</a>
                     </p>
                 </div>
             </div>
@@ -312,6 +317,8 @@
                 game (i.e., opening/closing doors, keeping track of collectibles, changing scenes) are linked 
                 strongly to this script.
             </p>
+
+            <p> I used a similar system to track changes to settings in the main menu.</p>
         </div>
 
         <div id="intro_text 2" class = "p2 panel hide">
@@ -401,13 +408,13 @@
             </p>
 
             <p> I expected to spend much more time with the Javascript code, but it turns out that CSS <s>wants
-                me to suffer</s> can be very fiddly, especially as I learn. I ended up using grid displays for
-                most of the formatting.
+                me to suffer</s> can be very fiddly, especially as I was first learning. I ended up using grid displays for
+                most of the formatting, which was a mistake (flexboxes are much easier to work with).
             </p>
 
             <p>The main Javascript feature I wanted to implement (a comment form that will send me an email)
-                needs backend work, which was outside the initial scope of the project. That feature, along
-                with dynamic resizing support, will come later.
+                needs backend work, which was outside the initial scope of the project. I hope to implement
+                that feature one day, but I'm worried that GitHub Pages won't support it.
             </p>
 
         </div>
@@ -418,15 +425,14 @@
                 tags, each with its own grid display.
             </p>
 
-            <p> I managed to implement the designs this way without much compromise, but the formatting breaks
-                quickly as the window's aspect ratio changes. I'm sure part of the issue comes from the
-                uncoordinated mess of units I used to define the sizes of each grid. They make it difficult to
-                predict how the page will react to resizing.
+            <p> I managed to implement the designs this way without much compromise, but the formatting broke
+                quickly as the window's aspect ratio changes. I used grid displays to format the "home" and
+                "projects" pages, but because it was so difficult to make them look okay when resized, I
+                used flexboxes when I made the "credits" page.
             </p>
 
-            <p> At the moment, I plan to fix the resizing problem by just defining a different, more
-                flexible layout for whatever pixel width first breaks the formatting. As I figure that out, I
-                hope I'll come upon some new information that helps ease the initial problem.
+            <p> Down the road, I might rework "home" and "projects" to use flex displays as well. There are some
+                lingering formatting problems that don't seem to be easily solvable in their current state.
             </p>
         </div>
 
@@ -449,30 +455,21 @@
         </div>
 
         <div class="p3 panel hide">
-            <p> The three major features I need to implement for the website to be done are dynamic resizing,
-                a working comment form, and the final two pages.
-            </p>
-
-            <p> In the tutorials I used to learn HTML, CSS, and Javascript, I learned about certain CSS rules
-                that change which code is used for formatting at certain pixel widths. I'll look into that more
-                when I implement dynamic resizing.
-            </p>
-
             <p> As I've mentioned before, the comment form needs some backend functionality to work properly.
-                At the moment, pressing "submit" will log an array with whatever the values of each input
+                At the moment, pressing "submit" logs an array with whatever the values of each input
                 field are. I plan to use those values to generate well-organized, readable text that'll form
                 the content of the email I receive. 
             </p>
 
-            <p> I want to include a "credits" page so I can list the resources I used in the development of
-                each project. For example, I used certian tutorials from <a href="https://www.youtube.com/
-                @Brackeys">Brackeys</a> to learn how to work with Godot and GDScript. I think people should
-                get credit for putting out free, high-quality tutorials that enable people like me to learn
-                new things.
+            <p> The main issue right now is GitHub Pages' apparent lack of support for backend operations.
+                I imagine that I'd need to purchase a subscription from some company to get them to provide
+                that functionality. Unfortunately, that's one more purchase than I'm willing to make for this project at
+                the moment.
             </p>
 
-            <p> I'm not sure what the second new page will contain. If I can't figure that part
-                out, I'll scrap it. </p>
+            <p> If I ever make the leap from GitHub to some other hosting platform, I'll implement this feature
+                then. For now, I'll try and figure out something else to take its place on the "home" page.
+            </p>
         </div>
 
     </div>
