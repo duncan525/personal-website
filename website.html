@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Luke Duncan | Website
+    </title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- magically makes responsive rules work for mobile -->
+</head>
+
+<body>
+    <div id="navigation"> <!-- wrapper for site navigation + old site link at bottom -->
+        <div id="nav_content"> <!-- actual content with links and stuff -->
+            <div class="nav_dropdown"> <!-- home -->
+                <h2 class="dropdown_title_wide">| <a href="index.html">Home</a></h2>
+                <h3 class="dropdown_title_narrow"><a href="index.html">Home</a></h3>
+            </div>
+            <div class="nav_dropdown"> 
+                <h2 class="dropdown_title_wide">| <u>Experience</u></h2> 
+                <h3 class="dropdown_title_narrow"><u>Experience</u></h3>
+
+                <div class="nav_dropdown_content">
+                    <h3>| <a href="nsf_reu.html">NSF REU</a></h3>
+                </div>
+            </div><!-- experience -->
+
+            <div class="nav_dropdown"> <!-- projects -->
+                <h2 class="dropdown_title_wide">| <u>Projects</u></h2>
+                <h3 class="dropdown_title_narrow"><u>Projects</u></h3>
+
+                <div class="nav_dropdown_content">
+                    <h3>| <a href="video_games.html">GameDev</a></h3>
+                </div>
+                <div class="nav_dropdown_content">
+                    <h3>| <a href="website.html">Website</a></h3>
+                </div>
+            </div>
+
+            <div class="nav_dropdown_narrow">
+                <a href="index.html">Home</a> |
+                <a href="nsf_reu.html">NSF REU</a> |
+                <a href="video_games.html">GameDev</a> |
+                <a href="website.html">Website</a> |
+                <a href="index0.html">Old Site</a>
+            </div>
+        </div>
+        <div id="old_site">
+            <a href="index0.html" target="_blank"><b>old site</b></a>
+        </div>
+    </div>
+
+    <div id="content">
+        <div class="info_box">
+            <div class="info_image"><img src="images/broken_layout.png" title="Mobile-friendly design"></div>
+            <div class="info_content">
+                <h1 class="info_title"> Original Project </h1>
+                <div class="info_links"> 
+                    <a href="index0.html" target="_blank">old site</a>
+                </div>
+                <div class="info_body"> 
+                    <p>When I joined UPE, I was required to complete a project in about a month. I wanted to
+                        make a website, so I did.</p>
+                    <p>I thought it would be fun to use raw HTML and CSS to put it together. I ended up using some
+                        JavaScript as well to get things working the way I wanted them to. I took a learn-by-doing
+                        approach to the site; the point was less to communicate information and more to demonstrate
+                        that I had learned something and could apply it in an interesting way.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="info_box">
+            <div class="info_image"><img src="images/new_layout.png" title="New, more intelligent layout"></div>
+            <div class="info_content">
+                <h1 class="info_title"> 2026 Revamp </h1>
+                <div class="info_links">
+                    <a href="website.html">reload page</a>
+                </div>
+                <div class="info_body"> 
+                    <p>The original project's haphazard layout and design philosophy (or lack thereof) of the
+                        kept me from updating the site consistently. Furthermore, I did not consider mobile devices
+                        with tall, narrow screens until I had already come up with layouts that worked on my
+                        laptop at fullscreen. I decided to remedy these issues in November 2026.</p>
+                    <p>I completed the overhaul in about a week this time. I wanted to make something simple,
+                        not ugly, and easy for me to update & expand as necessary. I also wanted it to work better
+                        on mobile devices. Given my experience with the previous iteration of the project, it was
+                        relatively quick for me to write everything from scratch.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

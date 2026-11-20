@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 
+<!-- colors: https://coolors.co/palette/2d3142-bfc0c0-ffffff-ef8354-4f5d75 -->
+
 <head>
     <title>Luke Duncan</title>
     <link rel="stylesheet" href="styles.css">
@@ -9,193 +11,151 @@
 
 <body>
 
-    <!-- about me -->
-    <div id="left">
+    <div id="navigation"> <!-- wrapper for site navigation + old site link at bottom -->
+        <div id="nav_content"> <!-- actual content with links and stuff -->
+            <div class="nav_dropdown"> <!-- home -->
+                <h2 class="dropdown_title_wide">| <a href="index.html">Home</a></h2>
+                <h3 class="dropdown_title_narrow"><a href="index.html">Home</a></h3>
+            </div>
+            <div class="nav_dropdown"> 
+                <h2 class="dropdown_title_wide">| <u>Experience</u></h2> 
+                <h3 class="dropdown_title_narrow"><u>Experience</u></h3>
 
-        <div id="name_and_photo">
-
-            <div id="name">
-                <div id="nav">
-                    <a href="index.html">home</a> | <a href="pages/projects.html">projects</a> | 
-                    <a href="pages/credits.html">credits</a>
-                    <style>#nav {color: white}</style>
+                <div class="nav_dropdown_content">
+                    <h3>| <a href="nsf_reu.html">NSF REU</a></h3>
                 </div>
+            </div><!-- experience -->
 
-                <p id="name_text"><strong>About me</strong></p>
-            </div>
+            <div class="nav_dropdown"> <!-- projects -->
+                <h2 class="dropdown_title_wide">| <u>Projects</u></h2>
+                <h3 class="dropdown_title_narrow"><u>Projects</u></h3>
 
-            <div id="photo">
-                <div id="me_img">
-                    <img class="left" src="images/profile.png" alt="screenshot of my first game">
+                <div class="nav_dropdown_content">
+                    <h3>| <a href="video_games.html">GameDev</a></h3>
+                </div>
+                <div class="nav_dropdown_content">
+                    <h3>| <a href="website.html">Website</a></h3>
                 </div>
             </div>
-            
-        </div>
 
-        <div id="intro_text"> 
-            <div id="intro_text_content">
-                <p>
-                    Welcome to my website! I'm Luke Duncan, a sophomore at Boston University. I study computer
-                    science with minors in public policy analysis and data science.
-                </p>
-
-                <p>
-                    I was born in New Orleans, but I grew up in South Carolina. I enjoy running and lifting,
-                    learning languages, and spending time outside in the sunshine. I'll also pick up a trumpet
-                    on occasion. 
-                </p>
-
-                <p>
-                    I haven't figured out what part of computer science I'm most interested in yet. I'm curious
-                    about AI, though. I'll pursue that subject on my own time for now.
-                </p>
+            <div class="nav_dropdown_narrow">
+                <a href="index.html">Home</a> |
+                <a href="nsf_reu.html">NSF REU</a> |
+                <a href="video_games.html">GameDev</a> |
+                <a href="website.html">Website</a> |
+                <a href="index0.html">Old Site</a>
             </div>
         </div>
-
-        <div id="dropdowns">
-
-            <div id="dropdown1" class="dropdown">
-                <p class="dropdown_title"><strong>WHY COMPUTER SCIENCE?</strong></p>
-                <p id="dropdown1_content"> In high school, I looked for a major that could lead to a
-                    flexible, high-paying career that isn't necessarily tied to one location. I had no computer
-                    science experience before I started college, so it's lucky that I've enjoyed the major
-                    so far! It looks like there'll be many interesting problems to solve and fun new things to
-                    learn down the road from here.
-                </p>
-            </div>
-
-            <div id="dropdown2" class="dropdown">
-                <p class="dropdown_title"><strong>WHY THE MINORS?</strong></p>
-                <p id="dropdown2_content"> I haven't started my minor-specific coursework yet, so my choices
-                    are a little naive. I feel like the data science minor would give me a useful skillset 
-                    to supplement my major. The public policy analysis minor scratches my ever-present
-                    politics/policy itch. I hope that, between my major and minors, I can get a better
-                    understanding of the way public policy initiatives grapple with the era of big data and
-                    generative AI.
-                </p>
-            </div>
-
-            <div id="dropdown3" class="dropdown">
-                <p class="dropdown_title"><strong>MORE ON MY HOBBIES</strong></p>
-                <p id="dropdown3_content"> I feel validated that you're curious about this part. I've been 
-                    lifting and running since 2023 (me and my besties all started out together!). After I 
-                    finished Spanish III in 10th grade, I took a personal interest and started learning on 
-                    my own. Later, I used what I had learned to branch out to Portuguese. I live for my hobbies
-                    and personal projects, so I like to take them as far as I feel I can push them. You can see 
-                    some of the fruits in the "Certifications" panel to the right.
-                </p>
-            </div>
-
+        <div id="old_site">
+            <a href="index0.html" target="_blank"><b>old site</b></a>
         </div>
-
-        <div id="contact">
-            <p><strong><a href="mailto:duncanluke525@gmail.com">contact</a> | <a href="https://www.linkedin.com/in/j-luke-duncan/">linkedin</a> | <a href="https://github.com/duncan525">github</a> | <a href="https://estrelaplatina.itch.io/">itch</a></strong></p>
-        </div>
-
     </div>
 
-    <div id="rightside">
-
-        <!-- projects -->
-        <div id="top" class="sub">
-
-            <div id="project">
-
-                <div id="project_title">
-                    <p>
-                        <a id="title_text" href="pages/projects.html">
-                            <strong>Untitled Game</strong>
-                        </a>
-                        <style>#title_text{color: #2D3142}
-                        </style>
+    <div id="content">
+        <!-- info_boxes contain an image, a title, some links maybe, and paragraphs of text -->
+        <div class="info_box">
+            <div class="info_image"><img src="images/profile.png" title="J. Luke Duncan"></div>
+            <div class="info_content">
+                <h1 class="info_title"> About Me </h1>
+                <div class="info_links"> 
+                    <a href="downloads/JLD_Resume.pdf" download>resume</a> |
+                    <a href="https://www.linkedin.com/in/j-luke-duncan/" target="_blank">LinkedIn</a> |
+                    <a href="mailto:duncan98@bu.edu">email</a> |
+                    <a href="https://github.com/duncan525" target="_blank">github</a>
+                </div>
+                <div class="info_body"> 
+                    <p>I'm Luke Duncan, a third-year undergrad at Boston University's Kilachand Honors College
+                        majoring in computer science. I'm also working on minors in data science and public
+                        policy analysis.</p>
+                    <p>I hope one day to use computer science to aid the development of public transit systems
+                        or transit policy in general. For now, I'm figuring out what subfield of CS I'm most
+                        interested in. At the moment, I'm very curious about embedded systems. I'm also enjoying
+                        learning about the math behind machine learning.
                     </p>
-
-                    <div id="project_sel">
-                        <button id="left_button"><strong>&lt;</strong></button>
-                        <button id="right_button"><strong>&gt;</strong></button>
-                    </div>
-
                 </div>
-
-                <div id="project_img">
-                    <a href="pages/projects.html" id="img_container">
-                        <img class = "link" id="right" src="images/FirstGameImg.png" alt="screenshot of the game">
-                    </a>
-                </div>
-
             </div>
-
-            <div id="project_des">
-                <p id="par_1">I started this project after a friend of mine asked me to participate in the
-                    <a href="https://itch.io/jam/gmtk-2025">GMTK Game Jam 2025</a> with him. It was initially
-                    a small, "learn by doing" project after learning the ropes of Godot and GDScript on
-                    Youtube, but I got attached.
-                </p>
-
-                <p id="par_2">All the code and art is my work. You can download it <a href="https://estrelaplatina.itch.io/arbitrary-button-game">
-                    here</a>.
-                </p>
-            </div>
-
         </div>
 
-        <!-- skills/certifications -->
-        <div id="mid" class="sub">
-
-            <div id="content-mid">
-                <div id="one">
-                    <h4 class="certification_title"> NSCA-CPT </h4>
-                    I became a certified personal trainer in May 2025. You can find
-                    the document <a href="downloads/LukeDuncanNSCA-CPT.pdf">here</a>.
-                    
+        <div class="info_box">
+            <div class="info_image"><img src="images/cds.png" title="BU Faculty for Computing & Data Sciences"></div>
+            <div class="info_content">
+                <h1 class="info_title"> Education </h1>
+                <div class="info_links"> 
+                    <a href="https://www.bu.edu/academics/cas/courses/cas-cs-350/" target="_blank">CS350</a> |
+                    <a href="https://www.bu.edu/academics/cas/courses/cas-cs-365/" target="_blank">CS365</a> |
+                    <a href="https://www.bu.edu/academics/cas/courses/cas-cs-460/" target="_blank">CS460</a> |
+                    <a href="https://www.bu.edu/academics/hub/courses/cas-po-399/" target="_blank">PO399</a> |
+                    <a href="https://www.bu.edu/khc/academics-community/curriculum/course-spotlight-hc-302/" target="_blank">HC302</a> 
                 </div>
-
-                <div id="two">
-                    <h4 class="certification_title"> CPR/AED </h4>
-                    I got my CPR/AED certification in 2025 through a program
-                    facilitated by my university. You can find it <a href="downloads/LukeDuncanCPR:AED.pdf">here</a>.
-                </div>
-
-                <div id="three">
-                    <h4 class="certification_title"> Seals of Biliteracy </h4>
-                    I obtained two South Carolina Seals of Biliteracy in June 2025. 
-                    Find Spanish <a href="downloads/lukeduncan_spanish_seal.pdf">here</a> and
-                    Portuguese <a href="downloads/lukeduncan_portuguese_seal.pdf">here</a>.
+                <div class="info_body">
+                    <p>At BU, my coursework has taken on a 75-25 split between STEM and the
+                        humanities. Here are some highlights: </p>
+                    <ul>
+                        <li>CS350, Fundamentals of Computing Systems, is about analyzing computer systems and
+                        predicting their behavior.</li>
+                        <li>CS365, Foundations of Data Science, covers data science math
+                        important to machine learning. Major topics include MLE and the EM algorithm, Markov
+                        chains and Metropolis-Hastings, and gradient descent.</li>
+                        <li>CS460, Introduction to Database Systems, involves concepts related to database management,
+                            including query languages such as SQL.</li>
+                        <li>PO399, Data Science for Politics, covers basic tools of statistical analysis (i.e., linear
+                            regression) and how to use them to analyze data in R. The course also teaches about
+                            avoiding common pitfalls in reasoning about data (i.e., what it means to select on the
+                            dependent variable).</li>
+                        <li>HC 302, Interdisciplinary Perspectives on Global Challenges – Forced Displacement, covers
+                            the systemic nature of global forced displacement. When I took the class, different sections
+                            specialized in particular regions. Mine was the U.S.-Mexico border.
+                        </li>
+                    </ul>
                 </div>
             </div>
-
-            <div id="label-mid">
-                <strong>Certifications</strong>
-            </div>
-
         </div>
 
-        <!-- comment form -->
-        <div id="low" class="sub">
-
-            <div id="label-low">
-                <strong>Comment Form</strong>
+        <div class="info_box">
+            <div class="info_image"><img src="images/modeling.png" title="My brief stint as a model"></div>
+            <div class="info_content">
+                <h1 class="info_title"> Extracurriculars </h1>
+                <div class="info_links"> 
+                    <a href="https://www.bu.edu/philo/community/the-humanities-and-artificial-intelligence-lab/" target="_blank">HAIL</a> |
+                    <a href="https://upe.bu.edu/" target="_blank">UPE</a> |
+                    <a href="https://buiaa.org/munatbu" target="_blank">MUN</a> 
+                </div>
+                <div class="info_body"> 
+                    <p>I've participated in a few clubs/organizations in my time at BU. I'm currently in the
+                        Humanities and AI Lab, or HAIL, a partially student-organized group focused on ethical
+                        issues brought about by the widespread use of LLM-powered chatbots.</p>
+                    <p>I also participated in UPE, a computing and information disciplines honors society, during
+                        my sophomore year. We discussed topics in CS and held a variety of social, academic, and
+                        career-focused events. This website started out as a monthlong matriculation project for UPE.
+                        The picture on the left is a recruitment poster I was delighted to be pictured on.</p>
+                    <p>During my first semester at BU, I joined the Model UN team. While I never competed, I joined
+                        weekly practices and a few mock conferences. I also helped staff our collegiate and high
+                        school model UN conferences, BarMUN and BosMUN.</p>
+                </div>
             </div>
+        </div>
 
-            <div id="left-low">
-                <select name="Select project..." id="select_project">
-                    <option value = "">Select project...</option>
-                    <option value = "untitled_game">Untitled Game</option>
-                    <option value = "the_sodfather">The Sodfather</option>
-                    <option value = "website">Website</option>
-                </select>
-
-                <input type="text" placeholder="Enter email..." id="email" class="input">
-
-                <button id="submit_button"><strong>Submit question/comment/bug report
-                    [NOT FUNCTIONAL YET]
-                </strong></button>
-
-            </div>
-
-            <div id="right-low">
-                <textarea type="text" placeholder="Enter description..." maxlength = 500
-                id="issue_description" class="input"></textarea>
+        <div class="info_box">
+            <div class="info_image"><img src="images/run.png" title="Photo from a run"></div>
+            <div class="info_content">
+                <h1 class="info_title"> Personal Interests </h1>
+                <div class="info_links">
+                    <a href="downloads/LukeDuncanNSCA-CPT.pdf" download>NSCA-CPT</a> |
+                    <a href="downloads/LukeDuncanCPR:AED.pdf" download>CPR/AED</a>
+                </div>
+                <div class="info_body">
+                    <p>Outside of academics, I love to run and lift weights! My specific goals & interests shift
+                        over time, but I spent this semester working on my mile time, pushing my pace during
+                        distance runs, and recovering strength I lost after an injury this summer. I ended up setting
+                        personal records for my mile (5:48) and half marathon (1:39:54) this semester, among other
+                        distances.</p>
+                    <p>I also speak Spanish and Portuguese. I haven't gotten much practice speaking lately, but I
+                        often read and listen to music in those languages to keep from getting too rusty.</p>
+                    <p>I technically play the trumpet, too. I say "technically" because I don't take it out very
+                        often anymore. I want to maintain some level of competence so I can join a community band
+                        one day.
+                    </p>
+                </div>
             </div>
         </div>
     </div>

@@ -1,0 +1,416 @@
+body {
+    background-color: #6b6b6b;
+    color: #2D3142;
+    /* courier new, TREBUCHET! */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 0.1fr 0.4fr 0.5fr 0.1fr;
+    column-gap: 1vw;
+}
+
+button {
+    width: 50%;
+    height: 100%;
+    box-shadow: 0px 0px 5px inset grey;
+}
+
+button:active {
+    background-color: lightgrey;
+}
+
+button:hover {
+    background-color: #E0E0E0;
+}
+
+select {
+    background-color: #BFC0C0;
+    color: #2D3142;
+}
+
+    select:hover {
+        background-color: #E0E0E0;
+    }
+
+a {
+    color: white;
+    text-decoration: underline;
+}
+
+    a:hover {
+        text-decoration: none;
+    }
+
+img.link:hover {
+    filter: brightness(80%);
+}
+
+
+#left {
+    display: grid;
+    grid-template-rows: 28vh 36vh 25vh 8vh;
+    border: 2px solid #292D3C;
+}
+
+    #name_and_photo {
+        background: #E0E0E0;
+        display: grid;
+        grid-template-columns: 20vw 20vw;
+    }
+
+        #name {
+            font-size: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+
+            #nav {
+                background: #2D3142;
+                border-bottom: 2px solid #292D3C;
+                font-size: 20px;
+                flex-basis: 20%;
+                padding-left: 3%;
+                align-content: center;
+                width: 100%;
+            }
+        
+            #name_text {
+                padding-left: 1%;
+                padding-right: 1%;
+                padding-left: 7px;
+                overflow: scroll;
+            }
+
+            .left {
+                height: 28vh;
+                width: 20vw;
+                object-fit: cover;
+            }
+
+            #photo {
+                border-left: 2px solid #292D3C;
+            }
+
+    #intro_text {
+        background: #4F5D75;
+        color: #E0E0E0;
+        overflow: scroll;
+    }
+
+        #intro_text_content {
+            margin: 3% 3% 3% 3%;
+            border-radius: 5%;
+        }
+
+    #dropdowns {
+        background: #4F5D75;
+        padding: 0 1.5vw 2vh 9px;
+        overflow: scroll;
+    }
+
+        #dropdown1, #dropdown2, #dropdown3 {
+            background: darkgray;
+        }
+
+        .dropdown {
+            height: auto;
+            padding: 3px;
+            border: 2px solid white;
+            margin: 10px;
+            color: #292D3C;
+        }
+
+            .dropdown_title {
+                padding: 10px 0px 10px 10px;
+                margin-top: 0px;
+                margin-bottom: -10px;
+                position: relative;
+                color: white;
+                top: -5px;
+            }
+
+            .dropdown_title:hover {
+                background-color: lightgrey;
+                padding-top: 5px;
+                margin-top: 5px;
+                padding-bottom: 5px;
+                margin-bottom: -5px;
+                border-radius: 5%;
+            }
+
+            #dropdown1_content, #dropdown2_content, #dropdown3_content {
+                display: none;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+    /* only :hover as a placeholder: should be changed to be click-interactive later */
+        .dropped #dropdown1_content {
+            display: inherit;
+            background: lightgrey;
+            border-radius: 3%;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding: 10px 10px 10px 10px;
+            
+        }
+
+        /* not sure why these next 2 selectors have to be separate from the last one but ok */
+        .dropped #dropdown2_content {
+            display: inherit;
+            background: lightgrey;
+            border-radius: 3%;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding: 10px 10px 10px 10px;
+        }
+
+        .dropped #dropdown3_content {
+            display: inherit;
+            background: lightgrey;
+            border-radius: 3%;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding: 10px 10px 10px 10px;
+        }
+
+    #contact {
+        background: #2D3142;
+        text-align: center;
+        color: #E0E0E0;
+        overflow: scroll;
+        margin-bottom: 0;
+    }
+
+/* right-side panels */
+#rightside {
+    display: grid;
+    width: 57vw;
+    grid-template-rows: 38.6vh 30vh 27vh;
+    row-gap: 1vh;
+    margin-right: 0;
+}
+
+    #top {
+        display: grid;
+        grid-template-columns: 55% 45%;
+        border: 2px solid #292D3C;
+    }
+
+        #project {
+            display: grid;
+            grid-template-rows: 8vh 30vh;
+        }
+
+            #project_title {
+                background: #E0E0E0;
+                display: grid;
+                grid-template-columns: 60% 40%;
+                text-align: center;
+            }
+
+                #project_sel {
+                    background: #E0E0E0;
+                    align-content: center;
+                    display: inline-flex;
+                }
+
+            #project_img {
+                display: flex;
+                align-items: flex-start;
+                border: 2px solid #292D3C;
+            }
+
+                #img_container {
+                    height: 100%;
+                    width: 100%;
+                }
+
+                #right {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+
+            #project_des {
+                background: #BFC0C0;
+                padding: 5% 5% 5% 7%;
+                text-align: left;
+                overflow: scroll;
+            }
+
+    #mid {
+        display: grid;
+        grid-template-columns: 96% 4%;
+    }
+
+        #content-mid {
+            display: grid;
+            grid-template-columns: 32% 32% 32%;
+            height: 29vh;
+            border: 2px solid #292D3C;
+            background: #4F5D75;
+        }
+
+            .certification_title {
+                margin: 0 0 5% 0;
+                text-decoration: underline;
+            }
+
+            #one, #two, #three {
+                background: #2D3142;
+                margin: 5% 5% 5% 5%;
+                border: 2px solid white;
+                border-radius: 25%;
+                color: white;
+                text-align: center;
+                padding: 15px;
+                overflow: scroll;
+            }
+
+        #label-mid {
+            transform: rotate(90deg);
+            transform-origin: center;
+            text-wrap-mode: nowrap;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            height: 1vh;
+            position: relative;
+            top: 13vh;
+        }
+
+    #low {
+        display: grid;
+        grid-template-columns: 4% 43% 53%;
+        color: #E0E0E0;
+    }
+
+        .input {
+            height: 20px;
+            border-radius: 5%;
+        }
+
+        #label-low {
+            transform: rotate(-90deg);
+            transform-origin: center;
+            text-wrap-mode: nowrap;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #left-low {
+            background: #2D3142;
+            display: inherit;
+            grid-template-rows: 30% 30% 40%;
+            border-top: 2px solid white;
+            border-left: 2px solid white;
+            border-bottom: 2px solid white;
+        }
+
+            #select_project {
+                margin: 7px 7px 7px 7px;
+                border: 2px solid white;
+                border-radius: 3px;
+            }
+
+            #email {
+                margin-left: 7px;
+                margin-right: 7px;
+                padding: 3px 3px 3px 3px;
+                border: 2px solid grey;
+                border-radius: 3px;
+                background-color: white;
+                align-self: center;
+            }
+
+            #submit_button {
+                margin: 0px 7px 7px 7px;
+                border: 2px solid grey;
+                border-radius: 3px;
+                background-color: white;
+                color: grey;
+
+                overflow: scroll;
+                /* this button gets special settings cause i say so*/
+                width: auto;
+                height: auto;
+            }
+
+                #submit_button:hover {
+                    background-color: darkgrey;
+                    color: white;
+                }
+
+        #right-low {
+            background: #2D3142;
+            border-top: 2px solid white;
+            border-right: 2px solid white;
+            border-bottom: 2px solid white;
+        }
+
+            #issue_description {
+                margin: 7px 7px 7px 7px;
+                padding: 7px 7px 7px 7px;
+
+                align-self: center;
+
+                position:relative;
+                top: 2%;
+                right: 3%;
+                bottom: 2%;
+                left: 2%;
+                width: 87.5%;
+                height: 82%;
+
+                resize: none;
+            }
+
+
+
+/* ensures correct image is displayed */
+.hide {
+    display: none;
+}
+
+    .left {
+        width: 100%;
+    }
+
+/* RESPONSIVE RULES */
+@media screen and (max-width: 700px) {
+    body {
+        display: inline-block;
+    }
+
+    #name_and_photo {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    #rightside {
+        width: auto;
+        margin-top: 1vh;
+    }
+
+}
+
+@media screen and (max-height: 430px) {
+    #label-mid, #label-low {
+        font-size: smaller;
+    }
+
+    #left {
+        grid-template-rows: 28vh 36vh 25vh 12.5vh;
+    }
+
+        #submit_button {
+            overflow: scroll;
+        }
+
+        #issue_description {
+            height: 75%;
+        }
+}

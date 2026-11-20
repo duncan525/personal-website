@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Luke Duncan | GameDev
+    </title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- magically makes responsive rules work for mobile -->
+</head>
+
+<body>
+    <div id="navigation"> <!-- wrapper for site navigation + old site link at bottom -->
+        <div id="nav_content"> <!-- actual content with links and stuff -->
+            <div class="nav_dropdown"> <!-- home -->
+                <h2 class="dropdown_title_wide">| <a href="index.html">Home</a></h2>
+                <h3 class="dropdown_title_narrow"><a href="index.html">Home</a></h3>
+            </div>
+            <div class="nav_dropdown"> 
+                <h2 class="dropdown_title_wide">| <u>Experience</u></h2> 
+                <h3 class="dropdown_title_narrow"><u>Experience</u></h3>
+
+                <div class="nav_dropdown_content">
+                    <h3>| <a href="nsf_reu.html">NSF REU</a></h3>
+                </div>
+            </div><!-- experience -->
+
+            <div class="nav_dropdown"> <!-- projects -->
+                <h2 class="dropdown_title_wide">| <u>Projects</u></h2>
+                <h3 class="dropdown_title_narrow"><u>Projects</u></h3>
+
+                <div class="nav_dropdown_content">
+                    <h3>| <a href="video_games.html">GameDev</a></h3>
+                </div>
+                <div class="nav_dropdown_content">
+                    <h3>| <a href="website.html">Website</a></h3>
+                </div>
+            </div>
+
+            <div class="nav_dropdown_narrow">
+                <a href="index.html">Home</a> |
+                <a href="nsf_reu.html">NSF REU</a> |
+                <a href="video_games.html">GameDev</a> |
+                <a href="website.html">Website</a> |
+                <a href="index0.html">Old Site</a>
+            </div>
+        </div>
+        <div id="old_site">
+            <a href="index0.html" target="_blank"><b>old site</b></a>
+        </div>
+    </div>
+
+    <div id="content">
+        <!-- info_boxes contain an image, a title, some links maybe, and paragraphs of text -->
+        <div class="info_box">
+            <div class="info_image"><img src="images/draft2.p8.png" title=""></div>
+            <div class="info_content">
+                <h2 class="info_title"> Pico-8 </h2>
+                <div class="info_links">
+                    <a href="" target="_blank">itch.io: </a> |
+                    <a href="images/draft2.p8.png">Pico-8 games can be exported as .png files!</a>
+                </div>
+                <div class="info_body">
+                    <p>After my time in Colorado was over, I needed to entertain myself for the month or
+                        so I had left before I returned to Boston. I turned to Pico-8, a fantasy console for
+                        people interested in game development. Its conceit is to severely restrict the tools
+                        and space you have to create the game. I admit I was drawn primarily by the challenge
+                        of making sprites that were still readable and appealing, despite their tiny size and
+                        limited color palette. I also thought it would be neat to pick up Lua, which is the
+                        console's chosen language.</p>
+                    <p>Pico-8 is very insistent that you do everything yourself. For example, I wrote a collision system
+                        from scratch based on <a href="https://youtube.com/playlist?list=PLyhkEEoUjSQtUiSOu-N4BIrHBFtLNjkyE&si=xsbXI_skhpL67HVC">this tutorial series</a>.
+                        There is no such system by default in Pico-8; all you get are functions for initializing the
+                        game, performing physics updates, and drawing sprites. Godot has a lot of high-level tools
+                        to keep the focus on design, but I find that approach less fun to work with.</p>
+                    <p>Working at such a low level is very appealing to me. I enjoyed writing everything myself.
+                        It was a good chance to practice planning and organizing my work intelligently. The
+                        inherently limited scope any Pico-8 game must adopt helped keep me focused.</p>
+                    <p>If you want to play the game, I encourage you to look at Pico-8's <a href="https://www.lexaloffle.com/dl/docs/pico-8_manual.html">default control scheme</a>
+                        first. Much like everything else the console offers, it is idiosyncratic nearly to a
+                        fault.</p>
+                    <p>All the art, sound effects, and code are my own. As I already mentioned, I based the
+                        collision system on the one written by <a href="https://youtube.com/playlist?list=PLyhkEEoUjSQtUiSOu-N4BIrHBFtLNjkyE&si=xsbXI_skhpL67HVC">Nerdy Teachers</a>.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="info_box">
+            <div class="info_image"><img src="images/sprout.png" title="Sprout stage from 'The Sodfather'"></div>
+            <div class="info_content">
+                <h2 class="info_title"> 2025 GMTK Game Jam </h2>
+                <div class="info_links"> 
+                    <a href="https://dozing-bison.itch.io/the-sodfather" target="_blank">itch.io: The Sodfather</a>
+                </div>
+                <div class="info_body">
+                    <p>Having just completed our first years as computer science majors, my friend
+                    and I decided to participate in a game jam over the summer. For the uninitiated, game jams
+                    are hackathons, but for making video games.</p>
+                    <p>The theme was "loop." We came up with the idea to make a plant-themed puzzle-platformer where the
+                        player's moveset cycled on a fixed timer. The goal is to collect enough water and nutrients to
+                        germinate a new sprout (thereby staying alive) before your character becomes an
+                        immobile platform.
+                    </p>
+                    <p>It was exciting to work with him to meet a tight deadline in such a high-pressure environment.
+                        The game jam was a test of my CS bona fides after a full year in the major.</p>
+                    <p>We split code, art, and level design responsibilities roughly evenly.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="info_box">
+            <div class="info_image"><img src="images/button_game.png" title="Arbitrary Button Game: An Apt Title"></div>
+            <div class="info_content">
+                <h2 class="info_title"> Arbitrary Button Game </h2>
+                <div class="info_links">
+                    <a href="https://estrelaplatina.itch.io/arbitrary-button-game" target="_blank">itch.io: Arbitrary Button Game</a> |
+                    <a href="https://github.com/duncan525/first-game-repository" target="_blank">github</a>
+                </div>
+                <div class="info_body">
+                    <p>I started this project as a way to learn the Godot game engine in time for the game jam later
+                        that summer. I was so engrossed by the idea of making my own game, though, that I continued
+                        working on it well into the first semester of my sophomore year.</p>
+                    <p>I wanted to make a "metroidvania," a genre of exploration game in which progress is
+                        continuously blocked by a series of locks and keys scattered throughout the map. For example,
+                        to progress in my game, you need to gain a "dash" ability to access new areas.</p>
+                    <p>The scale of the project was very ambitious at the time, so its development provided as many
+                        organizational hurdles as it did technical challenges. I found that thoughtful planning and
+                        continuous task organization were essential to complete any substantial project. Given the
+                        "learn by doing" approach I took to the game, though, that approach was conspicuously
+                        absent during many parts of development. Near the end of the project, I paid for it by
+                        having to constantly update systems I designed with narrow ends in mind. I spent a lot of time
+                        squinting at old code instead of making new features and designing new map areas. Never again.</p>
+                    <p>There is something to be said as well about scope creep. I became much less thoughtful about
+                        level design as time went on, prioritizing quantity over quality. This was a mistake.</p>
+                    <p>The code and art are my own work. I tried using an LLM a couple times when I was struggling
+                        to understand a bug or a feature of Godot, but I always had to figure it out myself and
+                        replace whatever the machine wrote. Without the full context of the project, and especially
+                        given the short-sightedness of my development approach, the chatbot couldn't expand on
+                        anything I did without causing problems down the line.</p>
+                    <p>Since I finished the game, I've become much more intentional about my approach to large
+                        projects.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
