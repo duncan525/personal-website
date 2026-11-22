@@ -24,6 +24,8 @@ body {
         box-sizing: border-box; /* necessary for vertical space trick */
         flex: 0.925;
         height: 100%;
+        padding-top: 5%;
+        overflow: hidden;
     }
 
         #nav_content > * + * { /* force vertical space for block display items */
@@ -146,6 +148,10 @@ a:visited {
     text-decoration: underline;
 }
 
+.pixel_art {
+    image-rendering: pixelated; /* dont smooth the image! */
+}
+
 /* responsive rules */
 @media screen and (max-width: 560px) {
     #content {
@@ -167,7 +173,15 @@ a:visited {
 
         .info_content {
             padding-right: 1%;
+            max-height: none;
+            height: auto;
         }
+        
+            .info_body {
+                height: auto;
+                max-height: none;
+                overflow: hidden;
+            }
 }
 
 @media screen and (max-width: 700px) {
